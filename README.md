@@ -4,7 +4,9 @@ Rapports de veille financière/tech générés automatiquement sur la watchlist 
 galaxie Elon Musk (SpaceX, Tesla, xAI, Neuralink, The Boring Company), semi-conducteurs
 (NVIDIA, TSMC, ASML, AMD, Broadcom, Arm), géants IA & plateformes (Microsoft, Alphabet,
 Apple, Meta, Amazon, Anthropic), espace & robotique (Rocket Lab, Intuitive Surgical,
-AST SpaceMobile, Palantir, Anduril, Figure AI, Boston Dynamics).
+AST SpaceMobile, Palantir, Anduril, Figure AI, Boston Dynamics), énergie (Constellation
+Energy, BWX Technologies, Quanta Services, Oklo, NuScale Power, ainsi qu'un suivi élargi
+aux startups d'énergie renouvelable et de nucléaire avancé).
 
 Chaque rapport applique une grille d'analyse à 3 questions (valeur réelle / regard
 sceptique / horizon futuriste) et se limite aux 10 événements les plus significatifs
@@ -12,6 +14,7 @@ du jour — qualité plutôt que quantité.
 
 ## Rapports
 
+- [2026-09-15](reports/2026-09-15.md)
 - [2026-09-14](reports/2026-09-14.md)
 - [2026-09-13](reports/2026-09-13.md)
 - [2026-09-12](reports/2026-09-12.md)
