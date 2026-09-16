@@ -14,6 +14,7 @@ du jour — qualité plutôt que quantité.
 
 ## Rapports
 
+- [2026-09-16](reports/2026-09-16.md)
 - [2026-09-15](reports/2026-09-15.md)
 - [2026-09-14](reports/2026-09-14.md)
 - [2026-09-13](reports/2026-09-13.md)
