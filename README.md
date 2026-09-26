@@ -16,6 +16,8 @@ du jour — qualité plutôt que quantité.
 
 ### Septembre 2026
 
+- [Agenda](reports/Septembre/Agenda.md)
+- [2026-09-26](reports/Septembre/2026-09-26.md)
 - [2026-09-25](reports/Septembre/2026-09-25.md)
 - [2026-09-24](reports/Septembre/2026-09-24.md)
 - [2026-09-23](reports/Septembre/2026-09-23.md)
