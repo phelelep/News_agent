@@ -37,7 +37,15 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 25 sept. | Tesla | Documentaire critique sur Elon Musk — sortie avancée au 9 octobre après menace de poursuites | 3 | → reporté au 9 oct. (avancé, voir Agenda Octobre) |
 | 25 sept. | Tesla | UE (TCMV) : agenda du 6 octobre ramené à une « discussion », vote FSD reporté à décembre | 4 | → reporté à décembre 2026 (date exacte non fixée) |
 | 26 sept. | xAI | Musk annonce l'accélération du déploiement Nvidia GB200/GB300 à Colossus 2 (Memphis), ~1,2M puces visées fin 2026 | 4 | ✓ réalisé (annonce) |
-| 28 sept. (NET) | SpaceX / Starship | Flight 14 — 1er vol orbital, 1er déploiement de satellites Starlink V3 | 5 | à venir — licence de vol FAA toujours en attente au 26/09 |
+| ~30 août (révélé 23-25 sept) | Holtec (Palisades) | Incident de manutention combustible (assemblage basculé) pendant le chargement du réacteur ; NRC enquête, chargement suspendu ; coïncide avec le report de l'IPO Holtec | 4 | ✓ réalisé (incident, enquête NRC en cours) |
+| 10 sept. | The Boring Company | Levée de Série D de 3 Md$ (valorisation 23 Md$), investisseurs émiratis, expansion tunnels EAU | 3 | ✓ réalisé |
+| 18 sept. | Arm / SoftBank | SoftBank relève son prêt sur marge adossé aux actions Arm de 20 à 25 Md$ | 3 | ✓ réalisé |
+| 21 sept. | Boston Dynamics (Hyundai) | Ouverture du centre de formation robotique complet au Metaplant America (Savannah, GA) ; plan de déploiement Hyundai de 25 000 à 30 000 robots Atlas/an | 4 | ✓ réalisé |
+| 22 sept. | TerraPower | Rupture avec Bechtel (contrat EPC ~4 Md$) sur le réacteur Natrium (Kemmerer, Wyoming) ; appel d'offres EPC relancé | 4 | ✓ réalisé |
+| 24 sept. | Tesla | Rapport belge (Johanna.be) : FSD dépasse la limite de vitesse dans 55 % des zones testées à Bruxelles | 4 | ✓ réalisé |
+| 26 sept. | Anduril | Désignation officielle du drone CCA "FQ-44A Fury" ; contrat de production ~5 Md$ (jusqu'à 500 appareils d'ici 2032) | 4 | ✓ réalisé |
+| 26 sept. | Rocket Lab | 97e lancement Electron réussi (StriX-13 pour Synspective) | 2 | ✓ réalisé |
+| 28 sept. (NET) | SpaceX / Starship | Flight 14 — 1er vol orbital, 1er déploiement de satellites Starlink V3 ; fenêtre de lancement précisée : 7h15-8h30 CT, Starbase (Pad B) | 5 | à venir — licence de vol FAA toujours incertaine au 27/09 |
 | 29 sept. | BWX Technologies | Investor Day (New York) | 3 | à venir |
 | 29-30 sept. | Nucléaire (secteur) | 4th World Nuclear SMR & Advanced Reactor Congress, Nashville | 2 | à venir |
 | ~30 sept. | Oklo / Terrestrial Energy / TRISO-X / Valar Atomics | Sélections conditionnelles du DOE Fuel Line Pilot Program | 3 | à venir (à confirmer) |
