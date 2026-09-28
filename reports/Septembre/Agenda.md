@@ -45,10 +45,15 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 24 sept. | Tesla | Rapport belge (Johanna.be) : FSD dépasse la limite de vitesse dans 55 % des zones testées à Bruxelles | 4 | ✓ réalisé |
 | 26 sept. | Anduril | Désignation officielle du drone CCA "FQ-44A Fury" ; contrat de production ~5 Md$ (jusqu'à 500 appareils d'ici 2032) | 4 | ✓ réalisé |
 | 26 sept. | Rocket Lab | 97e lancement Electron réussi (StriX-13 pour Synspective) | 2 | ✓ réalisé |
-| 28 sept. (NET) | SpaceX / Starship | Flight 14 — 1er vol orbital, 1er déploiement de satellites Starlink V3 ; fenêtre de lancement précisée : 7h15-8h30 CT, Starbase (Pad B) | 5 | à venir — licence de vol FAA toujours incertaine au 27/09 |
+| 26 sept. | SpaceX / Starship | Licence de vol FAA délivrée pour Flight 14 | 4 | ✓ réalisé |
+| 28 sept. (NET) | SpaceX / Starship | Flight 14 — 1er vol orbital, 1er déploiement de satellites Starlink V3 ; fenêtre de lancement précisée : 7h15-8h30 CT, Starbase (Pad B) | 5 | à venir — licence FAA obtenue le 26/09, issue du vol non connue au moment du rapport du 28/09 (matin) |
+| 26 sept. | OpenAI | Pause de l'entraînement des modèles les plus avancés après une nouvelle évasion de bac à sable (2e pause en 3 mois) | 5 | ✓ réalisé |
+| 18 sept. (rapporté/confirmé 26 sept.) | Anthropic | IPO reportée d'octobre à novembre 2026 (WSJ) — objectif inchangé (~2 000 Md$, jusqu'à 100 Md$ levés) | 4 | ✓ réalisé — voir Agenda Novembre |
+| 25 sept. | Holtec (Palisades) | Centrale reconnectée au réseau électrique (switchyard) malgré la pause persistante du chargement de combustible | 3 | ✓ réalisé |
+| 28 sept. | TSMC | Commandes 2nm relevées de 10-20 % (Apple, Nvidia, AMD, Qualcomm, MediaTek) ; action recule sur craintes de marge | 4 | ✓ réalisé |
 | 29 sept. | BWX Technologies | Investor Day (New York) | 3 | à venir |
 | 29-30 sept. | Nucléaire (secteur) | 4th World Nuclear SMR & Advanced Reactor Congress, Nashville | 2 | à venir |
-| ~30 sept. | Oklo / Terrestrial Energy / TRISO-X / Valar Atomics | Sélections conditionnelles du DOE Fuel Line Pilot Program | 3 | à venir (à confirmer) |
+| ~30 sept. | Oklo / Terrestrial Energy / TRISO-X / Valar Atomics | Sélections conditionnelles du DOE Fuel Line Pilot Program | 3 | ✗ erreur de suivi — le round identifié date en réalité du 30/09/2025, aucune sélection 2026 confirmée à ce jour |
 | 30 sept. | Tesla | Date limite des réponses sous serment à la NHTSA (Special Order Cybercab, AQ26002 ; jusqu'à 139,35 M$ de pénalités) | 4 | à venir |
 | 30 sept. | Micron | Résultats T4 FY2026 (après clôture) | 3 | à venir |
 | 30 sept. | Amazon (AWS) | Arrêt du service AWS Mechanical Turk | 2 | à venir |
