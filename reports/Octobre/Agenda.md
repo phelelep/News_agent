@@ -27,7 +27,7 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 23 oct. | Apple | Lancement commercial de l'iPhone Duo (70+ pays) | 4 | à venir |
 | 26 et 28 oct. | OpenAI (partenaire Microsoft) | OpenAI DevDay Exchange — Berlin et Paris | 2 | à venir |
 | 30 oct. | Rocket Lab / Iridium | Date limite des oppositions FCC — dossier Iridium/Rocket Lab | 3 | à venir |
-| Mi-oct. (visé) | Anthropic | Lancement du roadshow marketing de l'IPO ; cotation visée avant les élections de mi-mandat US (nov.) ; Nvidia en discussion pour un investissement d'ancrage jusqu'à 10 Md$ ; valorisation ciblée ~2 000 Md$ | 5 | à venir — non officiellement confirmé par la société |
+| Mi-oct. (visé) | Anthropic | Lancement du roadshow marketing de l'IPO ; cotation visée avant les élections de mi-mandat US (nov.) ; Nvidia en discussion pour un investissement d'ancrage jusqu'à 10 Md$ ; valorisation ciblée ~2 000 Md$ | 5 | → reporté à novembre 2026 (WSJ, 18/09, confirmé 26/09) — voir [Agenda Novembre](../Novembre/Agenda.md) |
 | ~27 oct. | Microsoft | Résultats T1 FY2027 | 4 | à venir |
 | ~27 oct. | Alphabet | Résultats T3 2026 | 4 | à venir |
 | ~28-30 oct. | Meta | Résultats T3 2026 | 4 | à venir |
