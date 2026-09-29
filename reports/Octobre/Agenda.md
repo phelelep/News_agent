@@ -4,7 +4,8 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 
 | Date | Entreprise | Événement | Impact attendu | Statut |
 |---|---|---|---|---|
-| 1er oct., 20h30 ET | Tesla | Révélation du nouveau Roadster à Waco, Texas (démonstration possible de propulseurs SpaceX à McGregor) | 4 | à venir |
+| 1er oct., 20h30 ET | Tesla | Révélation du nouveau Roadster à Waco, Texas (démonstration possible de propulseurs SpaceX à McGregor) | 4 | → reporté au 15 octobre (météo défavorable annoncée le 28/09) |
+| 15 oct. | Tesla | Nouvelle date de révélation du Roadster (site d'essais SpaceX, McGregor, Texas) | 4 | à venir |
 | 1er oct. | NVIDIA | Paiement du dividende trimestriel (0,25 $/action) | 1 | à venir |
 | ~2 oct. | Alphabet (Google) | Dépôt du jugement final conjoint proposé — procès antitrust ad-tech Google/DOJ | 3 | à venir |
 | 2 oct. | Tesla | Publication des chiffres de livraisons/production Q3 2026 | 4 | à venir |
@@ -23,7 +24,8 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 20 oct. | Intuitive Surgical | Résultats T3 2026 (après clôture, confirmé) | 3 | à venir |
 | 20-22 oct. | NVIDIA | GTC Berlin (keynote Jensen Huang le 21) | 3 | à venir |
 | 21-22 oct. | Nucléaire (secteur) | Advanced Reactor & SMR Summit 2026, Chicago | 2 | à venir |
-| ~20-28 oct. | Tesla | Résultats T3 2026 (date non officiellement fixée à ce stade) | 4 | à venir |
+| ~18-21 oct. | Tesla | Résultats T3 2026 (date non officiellement confirmée ; 21 oct. après clôture le plus cité) | 4 | à venir |
+| NET 19 oct. | SpaceX / Starship | Flight 15 (date provisoire, non confirmée officiellement par SpaceX), depuis le pad OLP-2 à Starbase | 4 | à venir (à confirmer) |
 | 23 oct. | Apple | Lancement commercial de l'iPhone Duo (70+ pays) | 4 | à venir |
 | 26 et 28 oct. | OpenAI (partenaire Microsoft) | OpenAI DevDay Exchange — Berlin et Paris | 2 | à venir |
 | 30 oct. | Rocket Lab / Iridium | Date limite des oppositions FCC — dossier Iridium/Rocket Lab | 3 | à venir |
