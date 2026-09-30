@@ -10,6 +10,8 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | ~2 oct. | Alphabet (Google) | Dépôt du jugement final conjoint proposé — procès antitrust ad-tech Google/DOJ | 3 | à venir |
 | 2 oct. | Tesla | Publication des chiffres de livraisons/production Q3 2026 | 4 | à venir |
 | ~4 oct. | Oklo | Suite possible du dossier FERC EL26-101 (Oklo/PJM) | 3 | à venir (à confirmer) |
+| 5 oct. | SpaceX / xAI (Musk) | Audition sous serment devant le NYC Council (Committee of the Whole) sur les risques de sécurité de l'IA, suite à l'assignation du 28/09 | 3 | à venir |
+| Mi-oct. (estimé, non daté précisément) | xAI / SpaceX | Mise en ligne des premiers GPU GB200/GB300 de Colossus 2 (~550 000 GPU, tranche entraînement) | 3 | à venir (à confirmer) |
 | 6 oct. | Tesla | TCMV (UE) — discussion (non-vote) sur l'extension du FSD Supervised aux 27 États membres ; vote formel reporté à décembre 2026 | 4 | à venir — voir statut mis à jour au 25/09 |
 | 6-7 oct. | Amazon | Prime Big Deal Days | 2 | à venir |
 | 7 oct. | Microsoft | Événement Windows & Surface (San Francisco), avec Satya Nadella et Jensen Huang | 3 | à venir |
