@@ -54,7 +54,7 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 29 sept. | BWX Technologies | Investor Day (New York) | 3 | ✓ réalisé — nouveaux objectifs 2030 (5,5-6 Md$ de revenus, marge EBITDA 20%), backlog doublé à 8,4 Md$ |
 | 29-30 sept. | Nucléaire (secteur) | 4th World Nuclear SMR & Advanced Reactor Congress, Nashville | 2 | ✓ réalisé — aucune annonce de deal spécifique identifiée à ce stade |
 | ~30 sept. | Oklo / Terrestrial Energy / TRISO-X / Valar Atomics | Sélections conditionnelles du DOE Fuel Line Pilot Program | 3 | ✗ erreur de suivi — le round identifié date en réalité du 30/09/2025, aucune sélection 2026 confirmée à ce jour |
-| 30 sept. | Tesla | Date limite des réponses sous serment à la NHTSA (Special Order Cybercab, AQ26002 ; jusqu'à 139,35 M$ de pénalités) | 4 | en cours — aucune réponse publique confirmée à l'heure de publication du rapport du 30/09 ; à revérifier demain |
+| 30 sept. | Tesla | Date limite des réponses sous serment à la NHTSA (Special Order Cybercab, AQ26002 ; jusqu'à 139,35 M$ de pénalités) | 4 | en cours — aucune réponse publique confirmée au 1er octobre (échéance dépassée) ; à revérifier |
 | 30 sept. | Micron | Résultats T4 FY2026 (après clôture) | 3 | à venir |
 | 30 sept. | Amazon (AWS) | Arrêt du service AWS Mechanical Turk | 2 | ✓ réalisé |
 | 30 sept. | Amazon (AWS) | AWS Summit Dubaï | 2 | ✓ réalisé |

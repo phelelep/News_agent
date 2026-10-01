@@ -23,6 +23,8 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | ~10 déc. (estimé) | Broadcom | Résultats T4 FY2026 | 3 | à venir |
 | Décembre 2026 | TerraPower | Décision NRC attendue sur le permis de construction (Natrium) | 3 | à venir |
 | 11 janv. 2027 | xAI / X Corp | Procès antitrust xAI/X Corp contre OpenAI | 3 | à venir |
+| 28 janv. 2027 | SpaceXAI / Anduril (Musk) | Remise du rapport « Project Meridian » (Pentagone) sur la guerre du futur, codirigé par Musk, Palmer Luckey et Newt Gingrich (annoncé 30/09/2026) | 3 | à venir |
+| 2030-2032 (visé) | Constellation Energy | Mise en service de 190 MW additionnels à Calvert Cliffs (PPA 20 ans avec Amazon, 690 MW, 3 Md$, annoncé 30/09/2026) | 3 | à venir |
 | 1er semestre 2027 (visé) | Meta | Déploiement des puces IA maison MTIA 450 / « Arke » en centre de données | 2 | à venir |
 | Mi-2027 (visé) | Rocket Lab / Iridium | Clôture prévue du rachat d'Iridium (≈54 $/action, ~1,9 Md$ cash sécurisé) | 4 | à venir |
 | Mi-2027 (visé) | Constellation Energy | Décision finale de licence d'exploitation — redémarrage Crane (ex-TMI) | 5 | à venir |

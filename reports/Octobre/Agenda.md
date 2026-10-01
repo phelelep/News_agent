@@ -9,7 +9,8 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 1er oct. | NVIDIA | Paiement du dividende trimestriel (0,25 $/action) | 1 | à venir |
 | ~2 oct. | Alphabet (Google) | Dépôt du jugement final conjoint proposé — procès antitrust ad-tech Google/DOJ | 3 | à venir |
 | 2 oct. | Tesla | Publication des chiffres de livraisons/production Q3 2026 | 4 | à venir |
-| ~4 oct. | Oklo | Suite possible du dossier FERC EL26-101 (Oklo/PJM) | 3 | à venir (à confirmer) |
+| 24 sept. (réel, anticipé ~4 oct.) | Oklo | Dossier FERC EL26-101 (Oklo/PJM) : la FERC rejette la plainte d'Oklo, le projet de 750 MW est écarté du cycle d'interconnexion en cours | 3 | ✗ échoué — recours possible via resoumission ou voie accélérée « Expedited Interconnection Track » (ouverte jusqu'au 31/12/2027) |
+| 13 oct. | Apple | Événement « maison intelligente » : hub à écran (Siri AI), HomePod mini 2, Apple TV 4K (non officiellement confirmé) | 4 | à venir |
 | 5 oct. | SpaceX / xAI (Musk) | Audition sous serment devant le NYC Council (Committee of the Whole) sur les risques de sécurité de l'IA, suite à l'assignation du 28/09 | 3 | à venir |
 | Mi-oct. (estimé, non daté précisément) | xAI / SpaceX | Mise en ligne des premiers GPU GB200/GB300 de Colossus 2 (~550 000 GPU, tranche entraînement) | 3 | à venir (à confirmer) |
 | 6 oct. | Tesla | TCMV (UE) — discussion (non-vote) sur l'extension du FSD Supervised aux 27 États membres ; vote formel reporté à décembre 2026 | 4 | à venir — voir statut mis à jour au 25/09 |
