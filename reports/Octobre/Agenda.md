@@ -6,10 +6,10 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 |---|---|---|---|---|
 | 1er oct., 20h30 ET | Tesla | Révélation du nouveau Roadster à Waco, Texas (démonstration possible de propulseurs SpaceX à McGregor) | 4 | → reporté au 15 octobre (météo défavorable annoncée le 28/09) |
 | 1er oct. | NVIDIA | Paiement du dividende trimestriel (0,25 $/action) | 1 | ✓ réalisé |
-| 2 oct. | Alphabet (Google) | Dépôt du jugement final conjoint proposé — procès antitrust ad-tech Google/DOJ (échéance du 02/10) | 4 | à venir — échéance passée, dépôt non confirmé publiquement au 04/10 |
+| 2 oct. | Alphabet (Google) | Dépôt du jugement final conjoint proposé — procès antitrust ad-tech Google/DOJ (échéance du 02/10) | 4 | à venir — échéance passée, dépôt non confirmé publiquement au 05/10 |
 | 2 oct. | Tesla | Publication des chiffres de livraisons/production Q3 2026 | 4 | ✓ réalisé — 486 532 livraisons (vs consensus 461 974), 464 391 produits, 13,7 GWh stockage (vs consensus 15,9 GWh) ; -2,1% sur un an, +1,3% sur un trimestre |
 | 24 sept. (réel, anticipé ~4 oct.) | Oklo | Dossier FERC EL26-101 (Oklo/PJM) : la FERC rejette la plainte d'Oklo, le projet de 750 MW est écarté du cycle d'interconnexion en cours | 3 | ✗ échoué — recours possible via resoumission ou voie accélérée « Expedited Interconnection Track » (ouverte jusqu'au 31/12/2027) |
-| 5 oct. | SpaceX / xAI (Musk) | Audition sous serment devant le NYC Council (Committee of the Whole) sur les risques de sécurité de l'IA, suite à l'assignation du 28/09 | 3 | à venir |
+| 5 oct. | SpaceX / xAI (Musk) | Audition sous serment devant le NYC Council (Committee of the Whole) sur les risques de sécurité de l'IA, suite à l'assignation du 28/09 — SpaceXAI, OpenAI, Anthropic, Google et Meta témoignent | 3 | ✓ réalisé — audience tenue ; issue législative (vote, calendrier) non connue au 05/10 |
 | 6 oct. | Tesla | TCMV (UE) — discussion (non-vote) sur l'extension du FSD Supervised aux 27 États membres ; vote formel reporté à décembre 2026 | 4 | à venir — voir statut mis à jour au 25/09 |
 | 6-7 oct. | Amazon | Prime Big Deal Days | 2 | à venir |
 | 7 oct. | Microsoft | Événement Windows & Surface (San Francisco), avec Satya Nadella et Jensen Huang | 3 | à venir |
