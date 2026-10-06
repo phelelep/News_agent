@@ -10,7 +10,8 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 2 oct. | Tesla | Publication des chiffres de livraisons/production Q3 2026 | 4 | ✓ réalisé — 486 532 livraisons (vs consensus 461 974), 464 391 produits, 13,7 GWh stockage (vs consensus 15,9 GWh) ; -2,1% sur un an, +1,3% sur un trimestre |
 | 24 sept. (réel, anticipé ~4 oct.) | Oklo | Dossier FERC EL26-101 (Oklo/PJM) : la FERC rejette la plainte d'Oklo, le projet de 750 MW est écarté du cycle d'interconnexion en cours | 3 | ✗ échoué — recours possible via resoumission ou voie accélérée « Expedited Interconnection Track » (ouverte jusqu'au 31/12/2027) |
 | 5 oct. | SpaceX / xAI (Musk) | Audition sous serment devant le NYC Council (Committee of the Whole) sur les risques de sécurité de l'IA, suite à l'assignation du 28/09 — SpaceXAI, OpenAI, Anthropic, Google et Meta témoignent | 3 | ✓ réalisé — audience tenue ; issue législative (vote, calendrier) non connue au 05/10 |
-| 6 oct. | Tesla | TCMV (UE) — discussion (non-vote) sur l'extension du FSD Supervised aux 27 États membres ; vote formel reporté à décembre 2026 | 4 | à venir — voir statut mis à jour au 25/09 |
+| 6 oct. | Tesla | TCMV (UE) — discussion (non-vote) sur l'extension du FSD Supervised aux 27 États membres ; vote formel reporté à décembre 2026 | 4 | ✓ réalisé — discussion de 25 min tenue, aucun vote à l'ordre du jour ; report à décembre confirmé |
+| 7 oct. | Tesla | Révélation teasée du Model Y Standard (fuites : dès 36 490 $, 69 kWh, 321 mi EPA) | 4 | à venir |
 | 6-7 oct. | Amazon | Prime Big Deal Days | 2 | à venir |
 | 7 oct. | Microsoft | Événement Windows & Surface (San Francisco), avec Satya Nadella et Jensen Huang | 3 | à venir |
 | 7 oct. | SpaceX / Starship | Expiration de la restriction de vol temporaire (TFR) FAA liée au Flight 14 | 2 | à venir |
