@@ -6,18 +6,19 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 |---|---|---|---|---|
 | 1er oct., 20h30 ET | Tesla | Révélation du nouveau Roadster à Waco, Texas (démonstration possible de propulseurs SpaceX à McGregor) | 4 | → reporté au 15 octobre (météo défavorable annoncée le 28/09) |
 | 1er oct. | NVIDIA | Paiement du dividende trimestriel (0,25 $/action) | 1 | ✓ réalisé |
-| 2 oct. | Alphabet (Google) | Dépôt du jugement final conjoint proposé — procès antitrust ad-tech Google/DOJ (échéance du 02/10) | 4 | à venir — échéance passée, dépôt non confirmé publiquement au 05/10 |
+| 2 oct. | Alphabet (Google) | Dépôt du jugement final conjoint proposé — procès antitrust ad-tech Google/DOJ (échéance du 02/10) | 4 | ✓ réalisé — dépôt effectué le 02/10 (22h15) ; versions rivales DOJ/Google sur délai d'ouverture d'AdX à Prebid (6 vs 12 mois) et nomination du moniteur ; arbitrage de la juge Brinkema à venir, calendrier non fixé |
 | 2 oct. | Tesla | Publication des chiffres de livraisons/production Q3 2026 | 4 | ✓ réalisé — 486 532 livraisons (vs consensus 461 974), 464 391 produits, 13,7 GWh stockage (vs consensus 15,9 GWh) ; -2,1% sur un an, +1,3% sur un trimestre |
 | 24 sept. (réel, anticipé ~4 oct.) | Oklo | Dossier FERC EL26-101 (Oklo/PJM) : la FERC rejette la plainte d'Oklo, le projet de 750 MW est écarté du cycle d'interconnexion en cours | 3 | ✗ échoué — recours possible via resoumission ou voie accélérée « Expedited Interconnection Track » (ouverte jusqu'au 31/12/2027) |
 | 5 oct. | SpaceX / xAI (Musk) | Audition sous serment devant le NYC Council (Committee of the Whole) sur les risques de sécurité de l'IA, suite à l'assignation du 28/09 — SpaceXAI, OpenAI, Anthropic, Google et Meta témoignent | 3 | ✓ réalisé — audience tenue ; issue législative (vote, calendrier) non connue au 05/10 |
 | 6 oct. | Tesla | TCMV (UE) — discussion (non-vote) sur l'extension du FSD Supervised aux 27 États membres ; vote formel reporté à décembre 2026 | 4 | ✓ réalisé — discussion de 25 min tenue, aucun vote à l'ordre du jour ; report à décembre confirmé |
-| 7 oct. | Tesla | Révélation teasée du Model Y Standard (fuites : dès 36 490 $, 69 kWh, 321 mi EPA) | 4 | à venir |
+| 7 oct. | Tesla | Révélation teasée du Model Y Standard (fuites : dès 36 490 $, 69 kWh, 321 mi EPA) | 4 | ✓ réalisé — double lancement surprise Model Y Standard (39 990 $) + Model 3 Standard (36 990 $, non anticipé) ; action -4,3% (vs +5% la veille sur anticipation) |
 | 6-7 oct. | Amazon | Prime Big Deal Days | 2 | à venir |
-| 7 oct. | Microsoft | Événement Windows & Surface (San Francisco), avec Satya Nadella et Jensen Huang | 3 | à venir |
-| 7 oct. | SpaceX / Starship | Expiration de la restriction de vol temporaire (TFR) FAA liée au Flight 14 | 2 | à venir |
+| 7 oct. | Microsoft | Événement Windows & Surface (San Francisco), avec Satya Nadella et Jensen Huang | 3 | ✓ réalisé — Nvidia dévoile RTX Spark (superchip GB10 Grace Blackwell, 120 Mds param. en local) ; Surface Laptop Ultra confirmé, prix/disponibilité non annoncés |
+| 7 oct. | SpaceX / Starship | Expiration de la restriction de vol temporaire (TFR) FAA liée au Flight 14 | 2 | ✓ réalisé |
 | 8 oct. | TSMC | Paiement du dividende | 1 | à venir |
 | ~8-10 oct. | TSMC | Publication des ventes mensuelles de septembre | 2 | à venir |
 | 9 oct. | Tesla (Elon Musk) | Sortie en salle (avancée) du documentaire critique sur Elon Musk | 3 | à venir |
+| 9 oct. | SpaceX | Nouvelle tranche de déblocage d'actions salariés/investisseurs (lock-up échelonné, suite à la tranche initiale du 06/08 ~911,5 M d'actions) ; part de Musk verrouillée jusqu'à mi-2027 | 3 | à venir |
 | 12 oct. | AMD | Keynote d'ouverture de Lisa Su à l'OCP Global Summit | 2 | à venir |
 | 13 oct. | Apple | Événement « maison intelligente » : hub à écran (Siri AI), HomePod mini 2, Apple TV 4K (non officiellement confirmé) | 4 | à venir |
 | 14 oct. | ASML | Résultats T3 2026 | 4 | à venir |
