@@ -12,15 +12,16 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 2-6 oct. | NVIDIA | Réaffirmation par Morgan Stanley comme « Top Pick » semi-conducteurs (Overweight, PT 300$) après rencontre avec Jensen Huang/Colette Kress (02/10) ; nouveau record intrajournalier à 243,37$ (06/10) | 3 | ✓ réalisé |
 | 5 oct. | SpaceX / xAI (Musk) | Audition sous serment devant le NYC Council (Committee of the Whole) sur les risques de sécurité de l'IA, suite à l'assignation du 28/09 — SpaceXAI, OpenAI, Anthropic, Google et Meta témoignent | 3 | ✓ réalisé — audience tenue ; issue législative (vote, calendrier) non connue au 05/10 |
 | 6 oct. | Tesla | TCMV (UE) — discussion (non-vote) sur l'extension du FSD Supervised aux 27 États membres ; vote formel reporté à décembre 2026 | 4 | ✓ réalisé — discussion de 25 min tenue, aucun vote à l'ordre du jour ; report à décembre confirmé |
+| 6 oct. | Constellation Energy / Google | PPA nucléaire de 20 ans : 890 MW de nouvelle capacité via « uprates » sur 11 réacteurs PJM (investissement >4,3 Mds$, mise en service 2028-2032) + contrat de fourniture séparé de 15 ans sur 2 700 MW additionnels (total ≈3,6 GW) | 5 | ✓ réalisé |
 | 6-7 oct. | SpaceX | Discussions préliminaires pour lever ~40 Mds$ de dette (≈10 Mds$ prêts bancaires + 30 Mds$ obligataire, Apollo en tête de file) afin d'acheter des puces Nvidia pour Colossus 2 (xAI, Memphis) ; clôture visée 2027 | 4 | à venir — accord non final |
-| 6-7 oct. | Amazon | Prime Big Deal Days | 2 | à venir |
+| 6-7 oct. | Amazon | Prime Big Deal Days | 2 | ✓ réalisé |
 | 7 oct. | Tesla | Révélation teasée du Model Y Standard (fuites : dès 36 490 $, 69 kWh, 321 mi EPA) | 4 | ✓ réalisé — double lancement surprise Model Y Standard (39 990 $) + Model 3 Standard (36 990 $, non anticipé) ; action -4,3% (vs +5% la veille sur anticipation) |
 | 7 oct. | Microsoft | Événement Windows & Surface (San Francisco), avec Satya Nadella et Jensen Huang | 3 | ✓ réalisé — Nvidia dévoile RTX Spark (superchip GB10 Grace Blackwell, 120 Mds param. en local) ; Surface Laptop Ultra confirmé, prix/disponibilité non annoncés |
 | 7 oct. | SpaceX / Starship | Expiration de la restriction de vol temporaire (TFR) FAA liée au Flight 14 | 2 | ✓ réalisé |
 | 7 oct. | SpaceX / Tesla (Musk) | Musk exclut sur X toute prise de contrôle de Terafab par TSMC (« nous allons construire et exploiter le fab »), sous-location partielle possible au mieux ; Intel confirme rester engagé sur le projet | 3 | ✓ réalisé |
 | 7-8 oct. | OpenAI (partenaire Microsoft) | Déploiement mondial de GPT-6 (Sol/Luna) et de l'interface « Intelligent UI » dans ChatGPT, niveaux payants puis gratuit/Go | 3 | ✓ réalisé |
-| 8 oct. | TSMC | Paiement du dividende | 1 | à venir |
-| ~8-10 oct. | TSMC | Publication des ventes mensuelles de septembre | 2 | à venir |
+| 8 oct. | TSMC | Paiement du dividende | 1 | ✓ réalisé |
+| 8 oct. | TSMC | Publication des ventes mensuelles de septembre : NT$511,86 Mds (+54,6% sur un an, -0,6% sur un mois) ; cumul 9 mois NT$3 898,73 Mds (+41,1%) | 4 | ✓ réalisé |
 | 9 oct. | Tesla (Elon Musk) | Sortie en salle (avancée) du documentaire critique sur Elon Musk | 3 | à venir |
 | 9 oct. | SpaceX | Nouvelle tranche de déblocage d'actions salariés/investisseurs (lock-up échelonné, suite à la tranche initiale du 06/08 ~911,5 M d'actions) ; part de Musk verrouillée jusqu'à mi-2027 | 3 | à venir |
 | 12 oct. | AMD | Keynote d'ouverture de Lisa Su à l'OCP Global Summit | 2 | à venir |
@@ -31,17 +32,17 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 15 oct. | Rocket Lab / Iridium | Date limite des commentaires publics FCC — dossier licences Iridium/Rocket Lab | 3 | à venir |
 | 16 oct., 5h PT | Apple | Ouverture des précommandes de l'iPhone Duo (pliable, dès 1 999 $) | 4 | à venir |
 | NET 19 oct. | SpaceX / Starship | Flight 15 (Ship 42/Booster 22, 1ère tentative de capture du booster Block 3), depuis le pad OLP-2 à Starbase | 4 | à venir (à confirmer) |
-| 20 oct. | Intuitive Surgical | Résultats T3 2026 (après clôture, confirmé) | 3 | à venir |
+| 19-20 oct. | Intuitive Surgical | Résultats T3 2026 (après clôture) — date exacte divergente selon les sources (19 ou 20 oct.), à confirmer | 3 | à venir |
 | 20-22 oct. | NVIDIA | GTC Berlin (keynote Jensen Huang le 21) | 3 | à venir |
 | 21 oct. | Tesla | Résultats T3 2026 (après clôture, date désormais confirmée) | 4 | à venir |
 | 21-22 oct. | Nucléaire (secteur) | Advanced Reactor & SMR Summit 2026, Chicago | 2 | à venir |
 | 23 oct. | Apple | Lancement commercial de l'iPhone Duo (70+ pays) | 4 | à venir |
 | 26 et 28 oct. | OpenAI (partenaire Microsoft) | OpenAI DevDay Exchange — Berlin et Paris | 2 | à venir |
-| ~27 oct. | Microsoft | Résultats T1 FY2027 | 4 | à venir |
-| ~27 oct. | Alphabet | Résultats T3 2026 | 4 | à venir |
+| 28 oct. | Microsoft | Résultats T1 FY2027 (date confirmée par communiqué du 07/10) | 4 | à venir |
+| ~28 oct. | Alphabet | Résultats T3 2026 (date estimée, non officiellement confirmée) | 4 | à venir |
 | ~28-30 oct. | Meta | Résultats T3 2026 | 4 | à venir |
 | 29 oct. | Quanta Services | Résultats T3 2026 (confirmé) | 2 | à venir |
-| ~29-30 oct. | Apple | Résultats T4 FY2026 (année fiscale complète) | 4 | à venir |
+| ~29-30 oct. | Apple | Résultats T4 FY2026 (année fiscale complète) | 4 | → déplacé au 2 novembre 2026 (date officiellement confirmée le 06/10) — voir [Agenda Novembre](../Novembre/Agenda.md) |
 | ~29-30 oct. | Amazon | Résultats T3 2026 | 4 | à venir |
 | NET 30 oct. | SpaceX / Starship | Flight 16 (Starlink), depuis le Kennedy Space Center LC-39A | 3 | à venir (à confirmer) |
 | 30 oct. | Rocket Lab / Iridium | Date limite des oppositions FCC — dossier Iridium/Rocket Lab | 3 | à venir |
