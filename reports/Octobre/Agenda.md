@@ -13,6 +13,8 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 5 oct. | SpaceX / xAI (Musk) | Audition sous serment devant le NYC Council (Committee of the Whole) sur les risques de sécurité de l'IA, suite à l'assignation du 28/09 — SpaceXAI, OpenAI, Anthropic, Google et Meta témoignent | 3 | ✓ réalisé — audience tenue ; issue législative (vote, calendrier) non connue au 05/10 |
 | 6 oct. | Tesla | TCMV (UE) — discussion (non-vote) sur l'extension du FSD Supervised aux 27 États membres ; vote formel reporté à décembre 2026 | 4 | ✓ réalisé — discussion de 25 min tenue, aucun vote à l'ordre du jour ; report à décembre confirmé |
 | 6 oct. | Constellation Energy / Google | PPA nucléaire de 20 ans : 890 MW de nouvelle capacité via « uprates » sur 11 réacteurs PJM (investissement >4,3 Mds$, mise en service 2028-2032) + contrat de fourniture séparé de 15 ans sur 2 700 MW additionnels (total ≈3,6 GW) | 5 | ✓ réalisé |
+| 6 oct. | Anduril | Contrat Marine US jusqu'à 2,9 Mds$ (composants sous-marins classe Virginia, livrés à General Dynamics Electric Boat/HII Newport News) + financement propre de 3,7 Mds$ pour un nouveau chantier « Arsenal-2 » (Sparrows Point, Maryland) ; total combiné jusqu'à 6,6 Mds$ | 4 | ✓ réalisé — chantier opérationnel visé 2030 |
+| 6-8 oct. | Tesla | Renommage du FSD (Supervised) en « Tesla Assisted Driving » en Europe, en lien avec les discussions avec le ministère allemand des Transports (limite de dépassement de vitesse ramenée à 10 %) | 4 | ✓ réalisé — approbation UE toujours non obtenue (vote TCMV reporté à décembre) |
 | 6-7 oct. | SpaceX | Discussions préliminaires pour lever ~40 Mds$ de dette (≈10 Mds$ prêts bancaires + 30 Mds$ obligataire, Apollo en tête de file) afin d'acheter des puces Nvidia pour Colossus 2 (xAI, Memphis) ; clôture visée 2027 | 4 | à venir — accord non final |
 | 6-7 oct. | Amazon | Prime Big Deal Days | 2 | ✓ réalisé |
 | 7 oct. | Tesla | Révélation teasée du Model Y Standard (fuites : dès 36 490 $, 69 kWh, 321 mi EPA) | 4 | ✓ réalisé — double lancement surprise Model Y Standard (39 990 $) + Model 3 Standard (36 990 $, non anticipé) ; action -4,3% (vs +5% la veille sur anticipation) |
@@ -22,11 +24,15 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 7-8 oct. | OpenAI (partenaire Microsoft) | Déploiement mondial de GPT-6 (Sol/Luna) et de l'interface « Intelligent UI » dans ChatGPT, niveaux payants puis gratuit/Go | 3 | ✓ réalisé |
 | 8 oct. | TSMC | Paiement du dividende | 1 | ✓ réalisé |
 | 8 oct. | TSMC | Publication des ventes mensuelles de septembre : NT$511,86 Mds (+54,6% sur un an, -0,6% sur un mois) ; cumul 9 mois NT$3 898,73 Mds (+41,1%) | 4 | ✓ réalisé |
-| 9 oct. | Tesla (Elon Musk) | Sortie en salle (avancée) du documentaire critique sur Elon Musk | 3 | à venir |
-| 9 oct. | SpaceX | Nouvelle tranche de déblocage d'actions salariés/investisseurs (lock-up échelonné, suite à la tranche initiale du 06/08 ~911,5 M d'actions) ; part de Musk verrouillée jusqu'à mi-2027 | 3 | à venir |
-| 12 oct. | AMD | Keynote d'ouverture de Lisa Su à l'OCP Global Summit | 2 | à venir |
+| 8 oct. | SpaceX | Accord annoncé pour racheter la totalité du spectre national 800 MHz de Grain Management (Starlink Direct-to-Cell/mobile) ; montant non divulgué officiellement (≈6 Mds$ évoqués en août par Bloomberg) | 4 | ✓ réalisé (annonce) — approbation FCC requise, pas de date fixée |
+| 8 oct. | OpenAI (partenaire Microsoft) | Rapport FT : revenu annualisé proche de 50 Mds$ fin septembre (vs ~68-70 Mds$ rapporté le mois précédent) ; chute des valeurs IA/semi-conducteurs (Nasdaq -1,25%, NVIDIA -2,9%, Broadcom -4,4%, Micron -4,8%) | 4 | ✓ réalisé — chiffres non confirmés officiellement par OpenAI, rebond partiel le lendemain |
+| 8 oct. | Musk (SpaceX/Tesla/xAI) | Trump remet à Elon Musk la National Medal of Science (Maison Blanche), aux côtés de Jensen Huang, Lisa Su et Sergey Brin | 3 | ✓ réalisé |
+| 9 oct. | Tesla (Elon Musk) | Sortie en salle (avancée) du documentaire critique sur Elon Musk | 3 | ✓ réalisé — sortie confirmée, réactions critiques de Musk sur X contre le réalisateur |
+| 9 oct. | SpaceX | Nouvelle tranche de déblocage d'actions salariés/investisseurs (lock-up échelonné, suite à la tranche initiale du 06/08 ~911,5 M d'actions) ; part de Musk verrouillée jusqu'à mi-2027 | 3 | ✓ réalisé — chiffres non recoupés (≈319 M d'actions / jusqu'à 51 Mds$ selon Yahoo Finance, non confirmés par une 2e source) |
+| 12-15 oct. | AMD | OCP Global Summit (San Jose) — keynote d'ouverture de Lisa Su ; Nvidia, Broadcom, Arm, Intel, Google, Meta, Microsoft, Oracle également attendus | 2 | à venir |
 | 13 oct. | Apple | Événement « maison intelligente » : hub à écran (Siri AI), HomePod mini 2, Apple TV 4K (non officiellement confirmé) | 4 | à venir |
 | 14 oct. | ASML | Résultats T3 2026 | 4 | à venir |
+| 14 oct. | Anthropic | Journée investisseurs institutionnels visée (San Francisco), non officiellement confirmée par Anthropic | 3 | à venir |
 | 15 oct. | Tesla | Nouvelle date de révélation du Roadster (site d'essais SpaceX, McGregor, Texas) | 4 | à venir |
 | 15 oct. | TSMC | Résultats T3 2026 (confirmé) | 4 | à venir |
 | 15 oct. | Rocket Lab / Iridium | Date limite des commentaires publics FCC — dossier licences Iridium/Rocket Lab | 3 | à venir |
