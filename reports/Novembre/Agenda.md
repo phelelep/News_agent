@@ -11,6 +11,7 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | à venir |
 | ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | à venir |
 | 9 nov. | Constellation Energy | Résultats T3 2026 (estimé) | 3 | à venir |
+| 12 nov. | Anthropic | Entrée en vigueur de la nouvelle politique d'utilisation Claude (comportements abusifs, règles électorales, annoncée le 08/10) | 3 | à venir |
 | 9 nov. | Palantir | Résultats T3 2026 (estimé, entre le 2 et le 9 nov. selon les sources) | 3 | à venir |
 | 9-13 nov. | Rocket Lab | Résultats T3 2026 (estimé) | 3 | à venir |
 | 9-13 nov. | AST SpaceMobile | Résultats T3 2026 (estimé, entre le 9 et le 10 nov. selon les sources) | 3 | à venir |
@@ -36,5 +37,6 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 2030-2032 (visé) | Constellation Energy | Mise en service de 190 MW additionnels à Calvert Cliffs (PPA 20 ans avec Amazon, 690 MW, 3 Md$, annoncé 30/09/2026) | 3 | à venir |
 | 2028 (visé) | Boston Dynamics / Hyundai | Objectif de capacité de production : 30 000 robots/an (usine Géorgie, US) | 2 | à venir |
 | 2028 (visé) | Alphabet (Waymo) | Lancement commercial de robotaxis Waymo à Singapour | 3 | à venir |
+| S1 2028 (visé) | GlobalFoundries / TSMC | Montée en production à grande échelle des interposers avancés (fab Malta, NY, accord du 08/10) | 3 | à venir |
 
 Agenda du mois précédent : [reports/Octobre/Agenda.md](../Octobre/Agenda.md)
