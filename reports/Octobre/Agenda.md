@@ -31,10 +31,11 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 8 oct. | Anthropic | Annonce d'une politique d'utilisation resserrée (comportements abusifs, règles électorales) | 3 | ✓ réalisé (annonce) — entrée en vigueur le 12/11, voir [Agenda Novembre](../Novembre/Agenda.md) |
 | 9 oct. | Tesla (Elon Musk) | Sortie en salle (avancée) du documentaire critique sur Elon Musk | 3 | ✓ réalisé — sortie confirmée, réactions critiques de Musk sur X contre le réalisateur |
 | 9 oct. | SpaceX | Nouvelle tranche de déblocage d'actions salariés/investisseurs (lock-up échelonné, suite à la tranche initiale du 06/08 ~911,5 M d'actions) ; part de Musk verrouillée jusqu'à mi-2027 | 3 | ✓ réalisé — chiffres non recoupés (≈319 M d'actions / jusqu'à 51 Mds$ selon Yahoo Finance, non confirmés par une 2e source) |
+| 9 oct. | Nvidia (écosystème — Supermicro) | Ting-Wei « Willy » Sun (ex-consultant Supermicro) plaide coupable — détournement de ~2,5 Mds$ de serveurs à puces Nvidia vers la Chine (contrôles à l'export) ; co-fondateur Wally Liaw non coupable, procès au 02/11 ; Steven Chang en fuite | 3 | ✓ réalisé |
 | 12-15 oct. | AMD | OCP Global Summit (San Jose) — keynote d'ouverture de Lisa Su ; Nvidia, Broadcom, Arm, Intel, Google, Meta, Microsoft, Oracle également attendus | 2 | à venir |
-| 13 oct. | Apple | Événement « maison intelligente » : hub à écran (Siri AI), HomePod mini 2, Apple TV 4K (non officiellement confirmé) | 4 | à venir |
+| 13 oct. | Apple | Événement « Welcome Home » (9h ET, New York) — invitations confirmées par Apple ; produits attendus (non nommés officiellement) : hub à écran (Siri AI), HomePod mini 2, Apple TV 4K | 4 | à venir |
 | 14 oct. | ASML | Résultats T3 2026 | 4 | à venir |
-| 14 oct. | Anthropic | Journée investisseurs institutionnels visée (San Francisco), non officiellement confirmée par Anthropic | 3 | à venir |
+| 14 oct. | Anthropic | Journée investisseurs institutionnels (San Francisco), rapportée par Bloomberg mais non confirmée officiellement par Anthropic ; marketing formel de l'IPO visé dès la semaine du 09/11, cotation espérée avant Thanksgiving, valorisation discutée 1 800-2 000 Md$ | 4 | à venir |
 | 15 oct. | Tesla | Nouvelle date de révélation du Roadster (site d'essais SpaceX, McGregor, Texas) | 4 | à venir |
 | 15 oct. | TSMC | Résultats T3 2026 (confirmé) | 4 | à venir |
 | 15 oct. | Rocket Lab / Iridium | Date limite des commentaires publics FCC — dossier licences Iridium/Rocket Lab | 3 | à venir |
