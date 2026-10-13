@@ -9,6 +9,7 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 2 nov. | BWX Technologies | Résultats T3 2026 (après clôture, confirmé) | 3 | à venir |
 | 3 nov. | AMD | Résultats T3 2026 (date confirmée par communiqué du 06/10, après clôture) | 4 | à venir |
 | 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | à venir |
+| NET 8 nov. (fenêtre 7-21 nov.) | SpaceX / Starship | Flight 15 (Ship 42/Booster 22) — tentative de récupération du booster ET, pour la 1ère fois, du vaisseau (« ship catch ») ; reporté depuis NET 19 oct. (Musk, 10/10) | 4 | à venir (à confirmer) |
 | ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | à venir |
 | 9 nov. | Constellation Energy | Résultats T3 2026 (estimé) | 3 | à venir |
 | 12 nov. | Anthropic | Entrée en vigueur de la nouvelle politique d'utilisation Claude (comportements abusifs, règles électorales, annoncée le 08/10) | 3 | à venir |
@@ -21,14 +22,18 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | ~16 nov. | Alphabet (Google) | Entrée en vigueur des remèdes comportementaux antitrust ad-tech (60 j. après jugement du 17/09) | 3 | à venir |
 | ~18 nov. | NVIDIA | Résultats T3 FY2027 (date non officiellement confirmée par Nvidia ; plusieurs calendriers tiers l'indiquent — correction du 09/10, précédemment supposée le 17 nov.) | 5 | à venir |
 | Novembre (visé) | X-energy | Décision NRC attendue sur le réacteur Xe-100 (Long Mott) | 3 | à venir |
+| Novembre (non daté) | Semi-conducteurs (secteur, Chine/USA) | Sommet Trump-Xi à Shenzhen — suivi de la trêve commerciale terres rares/export controls puces | 3 | à venir |
 | Avant Thanksgiving (~26 nov., visé) | Anthropic | Clôture visée de l'IPO (valorisation ciblée ~2 000 Md$, jusqu'à 100 Md$ levés) | 5 | à venir |
 | 30 nov.-3 déc. | NVIDIA | GTC Washington D.C. (keynote Jensen Huang le 1er déc.) | 2 | à venir |
 | Fin nov.-déc. (estimé) | Amazon (AWS) | AWS re:Invent 2026 (Las Vegas) | 2 | à venir |
 | 8 déc. | SpaceX | Dernière tranche de déblocage d'actions salariés (lock-up) | 2 | à venir |
 | ~10 déc. (estimé) | Broadcom | Résultats T4 FY2026 | 3 | à venir |
+| Décembre (non daté) | Semi-conducteurs (secteur, Chine/USA) | Sommet Trump-Xi à Miami — suivi de la trêve commerciale terres rares/export controls puces | 3 | à venir |
+| 10 janv. 2027 | Semi-conducteurs (secteur, Chine/USA) | Expiration de la trêve commerciale Trump-Xi sur les terres rares (prolongée depuis l'échéance initiale du 10/11/2026) ; friction non résolue sur les contrôles à l'export de puces IA et l'accès japonais aux terres rares | 4 | à venir |
 | 11 janv. 2027 | xAI / X Corp | Procès antitrust xAI/X Corp contre OpenAI | 3 | à venir |
 | 28 janv. 2027 | SpaceXAI / Anduril (Musk) | Remise du rapport « Project Meridian » (Pentagone) sur la guerre du futur, codirigé par Musk, Palmer Luckey et Newt Gingrich (annoncé 30/09/2026) | 3 | à venir |
 | 1er semestre 2027 (visé) | Meta | Déploiement des puces IA maison MTIA 450 / « Arke » en centre de données | 2 | à venir |
+| 2027 (visé) | Microsoft | Entrée en production de la puce IA maison Maia 300, visée pour couvrir « principalement » l'inférence en interne (annoncé 12/10 à l'OCP Summit) | 4 | à venir |
 | Mi-2027 (visé) | Rocket Lab / Iridium | Clôture prévue du rachat d'Iridium (≈54 $/action, ~1,9 Md$ cash sécurisé) | 4 | à venir |
 | Mi-2027 (visé) | Constellation Energy | Décision finale de licence d'exploitation — redémarrage Crane (ex-TMI) | 5 | à venir |
 | Juin 2027 | SpaceX (Elon Musk) | Expiration du verrou complet des actions d'Elon Musk chez SpaceX (~6,4 Md d'actions) | 3 | à venir |
