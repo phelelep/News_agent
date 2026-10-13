@@ -5,6 +5,7 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | Date | Entreprise | Événement | Impact attendu | Statut |
 |---|---|---|---|---|
 | 24 sept. (réel, anticipé ~4 oct.) | Oklo | Dossier FERC EL26-101 (Oklo/PJM) : la FERC rejette la plainte d'Oklo, le projet de 750 MW est écarté du cycle d'interconnexion en cours | 3 | ✗ échoué — recours possible via resoumission ou voie accélérée « Expedited Interconnection Track » (ouverte jusqu'au 31/12/2027) |
+| 30 sept. | Alphabet (Google) | Le juge Lewis Castel (SDNY) rejette la majorité des demandes de jugement sommaire de Google (plaintes Gannett/Daily Mail), ouvrant la voie à un procès devant jury sur les dommages ad-tech (>3,2 Md$ réclamés) | 4 | ✓ réalisé — date de procès non fixée |
 | 1er oct., 20h30 ET | Tesla | Révélation du nouveau Roadster à Waco, Texas (démonstration possible de propulseurs SpaceX à McGregor) | 4 | → reporté au 15 octobre (météo défavorable annoncée le 28/09) |
 | 1er oct. | NVIDIA | Paiement du dividende trimestriel (0,25 $/action) | 1 | ✓ réalisé |
 | 2 oct. | Alphabet (Google) | Dépôt du jugement final conjoint proposé — procès antitrust ad-tech Google/DOJ (échéance du 02/10) | 4 | ✓ réalisé — dépôt effectué le 02/10 (22h15) ; versions rivales DOJ/Google sur délai d'ouverture d'AdX à Prebid (6 vs 12 mois) et nomination du moniteur ; arbitrage de la juge Brinkema à venir, calendrier non fixé |
@@ -15,7 +16,8 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 6 oct. | Constellation Energy / Google | PPA nucléaire de 20 ans : 890 MW de nouvelle capacité via « uprates » sur 11 réacteurs PJM (investissement >4,3 Mds$, mise en service 2028-2032) + contrat de fourniture séparé de 15 ans sur 2 700 MW additionnels (total ≈3,6 GW) | 5 | ✓ réalisé |
 | 6 oct. | Anduril | Contrat Marine US jusqu'à 2,9 Mds$ (composants sous-marins classe Virginia, livrés à General Dynamics Electric Boat/HII Newport News) + financement propre de 3,7 Mds$ pour un nouveau chantier « Arsenal-2 » (Sparrows Point, Maryland) ; total combiné jusqu'à 6,6 Mds$ | 4 | ✓ réalisé — chantier opérationnel visé 2030 |
 | 6-8 oct. | Tesla | Renommage du FSD (Supervised) en « Tesla Assisted Driving » en Europe, en lien avec les discussions avec le ministère allemand des Transports (limite de dépassement de vitesse ramenée à 10 %) | 4 | ✓ réalisé — approbation UE toujours non obtenue (vote TCMV reporté à décembre) |
-| 6-7 oct. | SpaceX | Discussions préliminaires pour lever ~40 Mds$ de dette (≈10 Mds$ prêts bancaires + 30 Mds$ obligataire, Apollo en tête de file) afin d'acheter des puces Nvidia pour Colossus 2 (xAI, Memphis) ; clôture visée 2027 | 4 | à venir — accord non final |
+| 6-7 oct. | SpaceX | Discussions préliminaires pour lever ~40 Mds$ de dette (≈10 Mds$ prêts bancaires + 30 Mds$ obligataire, Apollo en tête de file, Pimco cité parmi les prêteurs en discussion) afin d'acheter des puces Nvidia pour Colossus 2 (xAI, Memphis) ; clôture visée 2027 | 4 | à venir — accord non final |
+| 6-7 oct. | SpaceX / AST SpaceMobile | FCC approuve (en partie) la constellation direct-to-device de SpaceX (jusqu'à 15 000 satellites ; 50% de la flotte opérationnelle exigée avant le 07/10/2032) | 4 | ✓ réalisé |
 | 6-7 oct. | Amazon | Prime Big Deal Days | 2 | ✓ réalisé |
 | 7 oct. | Tesla | Révélation teasée du Model Y Standard (fuites : dès 36 490 $, 69 kWh, 321 mi EPA) | 4 | ✓ réalisé — double lancement surprise Model Y Standard (39 990 $) + Model 3 Standard (36 990 $, non anticipé) ; action -4,3% (vs +5% la veille sur anticipation) |
 | 7 oct. | Microsoft | Événement Windows & Surface (San Francisco), avec Satya Nadella et Jensen Huang | 3 | ✓ réalisé — Nvidia dévoile RTX Spark (superchip GB10 Grace Blackwell, 120 Mds param. en local) ; Surface Laptop Ultra confirmé, prix/disponibilité non annoncés |
@@ -24,7 +26,7 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 7-8 oct. | OpenAI (partenaire Microsoft) | Déploiement mondial de GPT-6 (Sol/Luna) et de l'interface « Intelligent UI » dans ChatGPT, niveaux payants puis gratuit/Go | 3 | ✓ réalisé |
 | 8 oct. | TSMC | Paiement du dividende | 1 | ✓ réalisé |
 | 8 oct. | TSMC | Publication des ventes mensuelles de septembre : NT$511,86 Mds (+54,6% sur un an, -0,6% sur un mois) ; cumul 9 mois NT$3 898,73 Mds (+41,1%) | 4 | ✓ réalisé |
-| 8 oct. | SpaceX | Accord annoncé pour racheter la totalité du spectre national 800 MHz de Grain Management (Starlink Direct-to-Cell/mobile) ; montant non divulgué officiellement (≈6 Mds$ évoqués en août par Bloomberg) | 4 | ✓ réalisé (annonce) — approbation FCC requise, pas de date fixée |
+| 8 oct. | SpaceX | Accord annoncé pour racheter la totalité du spectre national 800 MHz de Grain Management (Starlink Direct-to-Cell/mobile) ; montant non divulgué officiellement (≈8 Mds$ selon le WSJ le 09/10, contre ≈6 Mds$ évoqués en août par Bloomberg) | 4 | ✓ réalisé (annonce) — approbation FCC requise, pas de date fixée |
 | 8 oct. | OpenAI (partenaire Microsoft) | Rapport FT : revenu annualisé proche de 50 Mds$ fin septembre (vs ~68-70 Mds$ rapporté le mois précédent) ; chute des valeurs IA/semi-conducteurs (Nasdaq -1,25%, NVIDIA -2,9%, Broadcom -4,4%, Micron -4,8%) | 4 | ✓ réalisé — chiffres non confirmés officiellement par OpenAI, rebond partiel le lendemain |
 | 8 oct. | Musk (SpaceX/Tesla/xAI) | Trump remet à Elon Musk la National Medal of Science (Maison Blanche), aux côtés de Jensen Huang, Lisa Su et Sergey Brin | 3 | ✓ réalisé |
 | 8 oct. | GlobalFoundries / TSMC | Accord de 2 Mds$ sur 5 ans pour la fabrication d'interposers en silicium avancés (fab Malta, NY) ; montée en production visée S1 2028 | 4 | ✓ réalisé (annonce) — production non démarrée |
@@ -32,15 +34,19 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 9 oct. | Tesla (Elon Musk) | Sortie en salle (avancée) du documentaire critique sur Elon Musk | 3 | ✓ réalisé — sortie confirmée, réactions critiques de Musk sur X contre le réalisateur |
 | 9 oct. | SpaceX | Nouvelle tranche de déblocage d'actions salariés/investisseurs (lock-up échelonné, suite à la tranche initiale du 06/08 ~911,5 M d'actions) ; part de Musk verrouillée jusqu'à mi-2027 | 3 | ✓ réalisé — chiffres non recoupés (≈319 M d'actions / jusqu'à 51 Mds$ selon Yahoo Finance, non confirmés par une 2e source) |
 | 9 oct. | Nvidia (écosystème — Supermicro) | Ting-Wei « Willy » Sun (ex-consultant Supermicro) plaide coupable — détournement de ~2,5 Mds$ de serveurs à puces Nvidia vers la Chine (contrôles à l'export) ; co-fondateur Wally Liaw non coupable, procès au 02/11 ; Steven Chang en fuite | 3 | ✓ réalisé |
-| 12-15 oct. | AMD | OCP Global Summit (San Jose) — keynote d'ouverture de Lisa Su ; Nvidia, Broadcom, Arm, Intel, Google, Meta, Microsoft, Oracle également attendus | 2 | à venir |
-| 13 oct. | Apple | Événement « Welcome Home » (9h ET, New York) — invitations confirmées par Apple ; produits attendus (non nommés officiellement) : hub à écran (Siri AI), HomePod mini 2, Apple TV 4K | 4 | à venir |
+| 9 oct. | AST SpaceMobile | Chute de 13,6% de l'action (nouveau plus bas sur 52 semaines, ≈49,20$) suite à l'approbation FCC et au rachat de spectre par SpaceX ; AT&T, Verizon et T-Mobile reculent aussi de 5-6% | 4 | ✓ réalisé |
+| 12-15 oct. | AMD | OCP Global Summit (San Jose) — keynote d'ouverture de Lisa Su ; Nvidia, Broadcom, Arm, Intel, Google, Meta, Microsoft, Oracle également attendus | 2 | ✓ réalisé (ouverture) — voir détails ci-dessous |
+| 12 oct. | NVIDIA | OCP Global Summit : contribution des designs Vera Rubin (rack « Vera CPU MGX » en livraison) à l'Open Compute Project ; standard réseau USFP avec Cisco ; Meta adopte Spectrum-6, Google certifie Falcon Transport sur Spectrum-X | 4 | ✓ réalisé |
+| 12 oct. | AMD | OCP Global Summit : Lisa Su confirme le début de production du rack Helios (sept. 2026, clients OpenAI/Meta/Microsoft/Oracle/Anthropic cités) ; dévoile le rack « Helion » (100% CPU) et un aperçu de l'EPYC « Verano » (192 cœurs) | 4 | ✓ réalisé |
+| 12 oct. | Microsoft | Dévoilement de la puce IA maison Maia 300 (3e génération), visée pour couvrir « principalement » l'inférence dès 2027, déploiement à plusieurs GW | 4 | ✓ réalisé (annonce) — entrée en production 2027, non livré |
+| 13 oct. | Apple | Événement « Welcome Home » (9h ET, New York) — invitations confirmées par Apple ; produits attendus (non nommés officiellement) : hub à écran (Siri AI), HomePod mini 2, Apple TV 4K | 4 | ✓ réalisé (événement tenu) — contenu officiel non confirmé par Apple au 13/10, à vérifier le 14/10 |
 | 14 oct. | ASML | Résultats T3 2026 | 4 | à venir |
-| 14 oct. | Anthropic | Journée investisseurs institutionnels (San Francisco), rapportée par Bloomberg mais non confirmée officiellement par Anthropic ; marketing formel de l'IPO visé dès la semaine du 09/11, cotation espérée avant Thanksgiving, valorisation discutée 1 800-2 000 Md$ | 4 | à venir |
+| 14 oct. | Anthropic | Journée investisseurs institutionnels (San Francisco), rapportée par Bloomberg mais non confirmée officiellement par Anthropic ; banques chefs de file identifiées (Morgan Stanley, Goldman Sachs, JPMorgan, Citigroup) ; marketing formel de l'IPO visé dès la semaine du 09/11, cotation espérée avant Thanksgiving, valorisation discutée 1 800-2 000 Md$ | 4 | à venir |
 | 15 oct. | Tesla | Nouvelle date de révélation du Roadster (site d'essais SpaceX, McGregor, Texas) | 4 | à venir |
 | 15 oct. | TSMC | Résultats T3 2026 (confirmé) | 4 | à venir |
 | 15 oct. | Rocket Lab / Iridium | Date limite des commentaires publics FCC — dossier licences Iridium/Rocket Lab | 3 | à venir |
 | 16 oct., 5h PT | Apple | Ouverture des précommandes de l'iPhone Duo (pliable, dès 1 999 $) | 4 | à venir |
-| NET 19 oct. | SpaceX / Starship | Flight 15 (Ship 42/Booster 22, 1ère tentative de capture du booster Block 3), depuis le pad OLP-2 à Starbase | 4 | à venir (à confirmer) |
+| NET 19 oct. | SpaceX / Starship | Flight 15 (Ship 42/Booster 22, 1ère tentative de capture du booster Block 3), depuis le pad OLP-2 à Starbase | 4 | → reporté à début novembre (NET ~8 nov., fenêtre 7-21 nov. selon Musk le 10/10) — voir [Agenda Novembre](../Novembre/Agenda.md) |
 | 19-20 oct. | Intuitive Surgical | Résultats T3 2026 (après clôture) — date exacte divergente selon les sources (19 ou 20 oct.), à confirmer | 3 | à venir |
 | 20-22 oct. | NVIDIA | GTC Berlin (keynote Jensen Huang le 21) | 3 | à venir |
 | 21 oct. | Tesla | Résultats T3 2026 (après clôture, date désormais confirmée) | 4 | à venir |
@@ -50,6 +56,7 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 28 oct. | Microsoft | Résultats T1 FY2027 (date confirmée par communiqué du 07/10) | 4 | à venir |
 | ~28 oct. | Alphabet | Résultats T3 2026 (date estimée, non officiellement confirmée) | 4 | à venir |
 | ~28-30 oct. | Meta | Résultats T3 2026 | 4 | à venir |
+| 29 oct. | AST SpaceMobile / SpaceX | Réunion FCC — proposition d'étendre à 482 MHz le spectre éligible au « Supplemental Coverage from Space » (SCS) en leasing ; projet de mise aux enchères de 25 MHz utilisable pour le direct-to-device | 3 | à venir |
 | 29 oct. | Quanta Services | Résultats T3 2026 (confirmé) | 2 | à venir |
 | ~29-30 oct. | Apple | Résultats T4 FY2026 (année fiscale complète) | 4 | → déplacé au 2 novembre 2026 (date officiellement confirmée le 06/10) — voir [Agenda Novembre](../Novembre/Agenda.md) |
 | ~29-30 oct. | Amazon | Résultats T3 2026 | 4 | à venir |
