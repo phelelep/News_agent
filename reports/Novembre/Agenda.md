@@ -12,6 +12,7 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | NET 8 nov. (fenêtre 7-21 nov.) | SpaceX / Starship | Flight 15 (Ship 42/Booster 22) — tentative de récupération du booster ET, pour la 1ère fois, du vaisseau (« ship catch ») ; reporté depuis NET 19 oct. (Musk, 10/10) | 4 | à venir (à confirmer) |
 | ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | à venir |
 | 9 nov. | Constellation Energy | Résultats T3 2026 (estimé) | 3 | à venir |
+| ~5 nov. | NuScale Power | Résultats T3 2026 (estimé) | 2 | à venir |
 | ~6 déc. (attendu) | Tesla | Assemblée générale annuelle — échéance évoquée par Barclays (Dan Levy, 16/10) comme fenêtre possible pour une annonce de fusion Tesla-SpaceX (spéculation non confirmée) ; date exacte non officiellement fixée | 3 | à venir |
 | 12 nov. | Anthropic | Entrée en vigueur de la nouvelle politique d'utilisation Claude (comportements abusifs, règles électorales, annoncée le 08/10) | 3 | à venir |
 | 9 nov. | Palantir | Résultats T3 2026 (estimé, entre le 2 et le 9 nov. selon les sources) | 3 | à venir |
