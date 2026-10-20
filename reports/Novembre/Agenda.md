@@ -10,7 +10,7 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 3 nov. | AMD | Résultats T3 2026 (date confirmée par communiqué du 06/10, après clôture) | 4 | à venir |
 | 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | à venir |
 | NET 8 nov. (fenêtre 7-21 nov.) | SpaceX / Starship | Flight 15 (Ship 42/Booster 22) — tentative de récupération du booster ET, pour la 1ère fois, du vaisseau (« ship catch ») ; reporté depuis NET 19 oct. (Musk, 10/10) | 4 | à venir (à confirmer) |
-| ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | à venir |
+| ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | → corrigé au 20 octobre 2026, après clôture (SpaceX est cotée depuis son IPO de juin 2026, pas privée) — voir [Agenda Octobre](../Octobre/Agenda.md) |
 | 9 nov. | Constellation Energy | Résultats T3 2026 (estimé) | 3 | à venir |
 | ~5 nov. | NuScale Power | Résultats T3 2026 (estimé) | 2 | à venir |
 | ~6 déc. (attendu) | Tesla | Assemblée générale annuelle — échéance évoquée par Barclays (Dan Levy, 16/10) comme fenêtre possible pour une annonce de fusion Tesla-SpaceX (spéculation non confirmée) ; date exacte non officiellement fixée | 3 | à venir |
