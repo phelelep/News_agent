@@ -76,9 +76,10 @@ Historique et calendrier des événements majeurs du mois pour la watchlist. Une
 | 21 oct. | Tesla | Résultats T3 2026 (après clôture) ; consensus ~27,88 Md$ de revenus, 0,43$/action ajusté (vs 0,50$ un an plus tôt), FCF T3 attendu à -4,92 Md$ | 7 | ✓ réalisé — CA 28,05 Md$ (stable, conforme consensus), BPA ajusté 0,48$ (au-dessus du consensus) mais résultat net GAAP -43% (787 M$), marge opérationnelle 2,6% (vs 5,8%) ; capex 2026 réduit à ~20 Md$ ; action -3% en after-hours malgré un rebond initial |
 | 21 oct. | Meta | Résultats T3 2026 (après clôture, confirmé par communiqué officiel) — même jour que Tesla ; CA T3 guidé par l'entreprise à 61-64 Md$, consensus ~6,75$/action (TipRanks) | 6 | ✓ réalisé — CA 64,6 Md$ (+26%, au-dessus du consensus) ; charge légale exceptionnelle de 9,89 Md$ ramenant le BPA GAAP à 3,83$ (BPA ajusté hors charge ~7,40$) ; capex 2026 relevé à 135-145 Md$ ; action +2 à +7% en after-hours selon les sources |
 | 20-22 oct. | NVIDIA | GTC Berlin (keynote Jensen Huang le 21, 11h-13h CEST, Tempodrom Berlin, diffusion en direct) | 5 | ✓ réalisé — DSX Pod, OpenShell, Vera Rubin en pleine production dévoilés ; ~10 Md$ investis dans l'écosystème tech européen, 14 nouvelles prises de participation dans des startups ; Volvo Cars adopte la plateforme Hyperion |
-| 21-22 oct. | Nucléaire (secteur) | Advanced Reactor & SMR Summit 2026, Chicago | 2 | à venir |
-| 23 oct. | Apple | Lancement commercial de l'iPhone Duo (70+ pays) | 4 | à venir |
-| 26 et 28 oct. | OpenAI (partenaire Microsoft) | OpenAI DevDay Exchange — Berlin et Paris | 2 | à venir |
+| 21-22 oct. | Nucléaire (secteur) | Advanced Reactor & SMR Summit 2026, Chicago | 2 | ✓ réalisé (tenu) — détails/annonces non confirmés dans nos sources |
+| 23 oct. | Apple | Lancement commercial de l'iPhone Duo (premiers pays) | 4 | ✓ réalisé — extension à 28 pays supplémentaires prévue le 30/10 |
+| 23 oct. (attendu, non confirmé) | Anthropic | Dépôt public du prospectus S-1 (SEC) en vue de l'IPO — règle des 15 jours avant roadshow (visé semaine du 09/11) | 6 | à venir — plusieurs médias (Bloomberg, Reuters) citent cette date, Anthropic ne l'a pas confirmée |
+| 26 et 28 oct. | OpenAI (partenaire Microsoft) | OpenAI DevDay Exchange — Berlin (26) et Paris (28) | 2 | à venir |
 | 28 oct. (annoncé le 19/10) | Apple | Évènement produit « Pro and tell » (Los Angeles) : 1er MacBook Pro à écran tactile, MacBook Pro M6, iMac et iPad mini renouvelés ; même jour que les résultats Microsoft (et, selon certains calendriers, Alphabet) | 4 | à venir |
 | 28 oct. | Microsoft | Résultats T1 FY2027 (date confirmée par communiqué du 07/10) | 4 | à venir |
 | ~28 oct. | Alphabet | Résultats T3 2026 (date estimée, non officiellement confirmée) | 4 | à venir |
