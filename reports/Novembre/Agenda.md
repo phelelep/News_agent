@@ -16,7 +16,7 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 9 nov. | Constellation Energy | Résultats T3 2026 (estimé) | 3 | à venir |
 | 9-13 nov. | Rocket Lab | Résultats T3 2026 (estimé) | 3 | à venir |
 | 9-13 nov. | AST SpaceMobile | Résultats T3 2026 (estimé, entre le 9 et le 10 nov. selon les sources) | 3 | à venir |
-| Semaine du 9 nov. (visé) | Anthropic | Démarrage visé du marketing formel (roadshow) de l'IPO | 4 | à venir |
+| Semaine du 9 nov. (visé) | Anthropic | Démarrage visé du marketing formel (roadshow) de l'IPO, tarification visée la semaine suivante, cotation avant Thanksgiving (26/11) | 5 | à venir — rapporté le 29/10 par IFR/Bloomberg/The Motley Fool, non confirmé officiellement par Anthropic |
 | ~10-11 nov. | Oklo | Résultats T3 2026 (estimé) | 2 | à venir |
 | 12 nov. | Anthropic | Entrée en vigueur de la nouvelle politique d'utilisation Claude (comportements abusifs, règles électorales, annoncée le 08/10) | 3 | à venir |
 | 13 nov. | AST SpaceMobile | Date limite « lead plaintiff » — recours collectif en valeurs mobilières Hunter v. AST SpaceMobile (n° 26-cv-00378, W.D. Texas), période du 04/03/2025 au 15/07/2026 | 4 | à venir |
