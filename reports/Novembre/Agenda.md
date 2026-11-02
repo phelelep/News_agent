@@ -9,12 +9,12 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 2 nov. | BWX Technologies | Résultats T3 2026 (après clôture, confirmé) | 3 | à venir |
 | 2 nov. | Palantir | Résultats T3 2026 (après clôture — date précisée par plusieurs calendriers boursiers, remplace l'estimation « entre le 2 et le 9 nov. ») | 3 | à venir |
 | 3 nov. | AMD | Résultats T3 2026 (date confirmée par communiqué du 06/10, après clôture) | 4 | à venir |
+| 3 nov. | Binance (crypto) | Mise à jour détaillée attendue sur le piratage de 6,3 Md$ (29-30/10) — montant récupéré/gelé, calendrier d'indemnisation ; Binance indique avoir couvert ~95 % des pertes au 01/11 (vs 90 % précédemment) | 4 | à venir |
 | 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | à venir |
 | ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | → corrigé au 20 octobre 2026, après clôture (SpaceX est cotée depuis son IPO de juin 2026, pas privée) — voir [Agenda Octobre](../Octobre/Agenda.md) |
 | ~5 nov. | NuScale Power | Résultats T3 2026 (estimé) | 2 | à venir |
-| NET 8 nov. (fenêtre 7-21 nov.) | SpaceX / Starship | Flight 15 (Ship 42/Booster 22) — tentative de récupération du booster ET, pour la 1ère fois, du vaisseau (« ship catch ») ; reporté depuis NET 19 oct. (Musk, 10/10) | 4 | à venir (à confirmer) |
+| NET 12 nov. (fenêtre 7-21 nov.) | SpaceX / Starship | Flight 15 (Ship 42/Booster 22) — tentative de récupération simultanée du booster ET, pour la 1ère fois, du vaisseau (« double catch ») ; cible resserrée au 12 nov. selon une coordination FAA/trafic aérien repérée le 29/10 (compte SpaceNotices), contre NET 8 nov. précédemment ; chances de succès estimées par Musk à 50-60 % (call du 20/10) | 4 | à venir (à confirmer) |
 | 9 nov. | Rocket Lab / Iridium | Réplique d'Iridium attendue au dossier FCC (après l'échéance d'opposition du 30/10, oppositions de Ligado et SpaceX) — voir [Agenda Octobre](../Octobre/Agenda.md) | 3 | à venir |
-| Décembre 2026 (visé, non confirmé) | SpaceX / Starship | Flight 16 (Starlink), report depuis NET 30 oct. (NASASpaceflight, non confirmé officiellement) ; pourrait devenir le 1er lancement Starship depuis le pad 39A (Kennedy Space Center) plutôt que Starbase — voir [Agenda Octobre](../Octobre/Agenda.md) | 3 | à venir (à confirmer) |
 | 9 nov. | Constellation Energy | Résultats T3 2026 (estimé) | 3 | à venir |
 | 9-13 nov. | Rocket Lab | Résultats T3 2026 (estimé) | 3 | à venir |
 | 9-13 nov. | AST SpaceMobile | Résultats T3 2026 (estimé, entre le 9 et le 10 nov. selon les sources) | 3 | à venir |
@@ -28,6 +28,7 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 30 nov.-3 déc. | NVIDIA | GTC Washington D.C. (keynote Jensen Huang le 1er déc.) | 2 | à venir |
 | Novembre (visé) | X-energy | Décision NRC attendue sur le réacteur Xe-100 (Long Mott) | 3 | à venir |
 | Novembre (non daté) | Semi-conducteurs (secteur, Chine/USA) | Sommet Trump-Xi à Shenzhen — suivi de la trêve commerciale terres rares/export controls puces | 3 | à venir |
+| Décembre 2026 (visé, non confirmé) | SpaceX / Starship | Flight 16 (Starlink), report depuis NET 30 oct. (NASASpaceflight, non confirmé officiellement) ; pourrait devenir le 1er lancement Starship depuis le pad 39A (Kennedy Space Center) plutôt que Starbase — voir [Agenda Octobre](../Octobre/Agenda.md) | 3 | à venir (à confirmer) |
 | ~6 déc. (attendu) | Tesla | Assemblée générale annuelle — échéance évoquée par Barclays (Dan Levy, 16/10) comme fenêtre possible pour une annonce de fusion Tesla-SpaceX (spéculation non confirmée) ; date exacte non officiellement fixée | 3 | à venir |
 | Fin nov.-déc. (estimé) | Amazon (AWS) | AWS re:Invent 2026 (Las Vegas) | 2 | à venir |
 | 8 déc. | SpaceX | Dernière tranche de déblocage d'actions salariés (lock-up) | 2 | à venir |
