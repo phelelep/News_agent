@@ -5,11 +5,11 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | Date | Entreprise | Événement | Impact attendu | Statut |
 |---|---|---|---|---|
 | 4 mars 2026 (réel, rétroactif) | TerraPower | Permis de construction NRC accordé — réacteur Natrium Kemmerer Unit 1 (Wyoming), 345 MW (pointe 500 MW via stockage à sels fondus), 1er permis NRC délivré pour un réacteur commercial non refroidi à eau légère | 5 | ✓ réalisé — information rétroactive ; date initialement supposée décembre 2026, corrigée le 09/10/2026 |
-| 2 nov. | Apple | Résultats T4 FY2026 (année fiscale complète, confirmé le 06/10) — 1er call aux résultats sous la direction du nouveau CEO John Ternus | 4 | à venir |
-| 2 nov. | BWX Technologies | Résultats T3 2026 (après clôture, confirmé) | 3 | à venir |
-| 2 nov. | Palantir | Résultats T3 2026 (après clôture — date précisée par plusieurs calendriers boursiers, remplace l'estimation « entre le 2 et le 9 nov. ») | 3 | à venir |
-| 3 nov. | AMD | Résultats T3 2026 (date confirmée par communiqué du 06/10, après clôture) | 4 | à venir |
-| 3 nov. | Binance (crypto) | Mise à jour détaillée attendue sur le piratage de 6,3 Md$ (29-30/10) — montant récupéré/gelé, calendrier d'indemnisation ; Binance indique avoir couvert ~95 % des pertes au 01/11 (vs 90 % précédemment) | 4 | à venir |
+| 2 nov. | Apple | Résultats T4 FY2026 (1er call sous John Ternus) — CA record 114,5 Md$ (+12 %), BPA 2,10 $ (+14 %), marge brute 47,9 %, CA annuel FY2026 record à 479 Md$ | 4 | ✓ réalisé |
+| 2 nov. | BWX Technologies | Résultats T3 2026 — CA 953,0 M$ (légèrement sous consensus 973,3 M$), BPA non-GAAP 1,26 $ (bat consensus 1,19 $), guidance FY2026 resserrée à 4,72-4,77 $/action, 1ère perspective 2027 (croissance CA « high-single-digit ») | 3 | ✓ réalisé |
+| 2 nov. | Palantir | Résultats T3 2026 — CA 2,313 Md$ (+96 % YoY, au-dessus de la guidance 2,160-2,164 Md$), BPA GAAP 0,44 $ (vs 0,36 $ att.), commercial US dépasse le gouvernemental US pour la 1ère fois | 3 | ✓ réalisé — impact matériel supérieur à l'estimation initiale, voir rapport du 03/11 (7/10) |
+| 3 nov. | AMD | Résultats T3 2026 (après clôture ; guidance T2 : CA ~13 Md$ ±300 M$, +41 % YoY, marge brute non-GAAP ~56 %) | 4 | à venir |
+| 3 nov. | Binance (crypto) | Mise à jour détaillée attendue sur le piratage de 6,3 Md$ (29-30/10) — rapport complet de preuve de réserves promis pour le 02/11 ; publication dans la forme annoncée non confirmée au 03/11 | 4 | à venir |
 | 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | à venir |
 | ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | → corrigé au 20 octobre 2026, après clôture (SpaceX est cotée depuis son IPO de juin 2026, pas privée) — voir [Agenda Octobre](../Octobre/Agenda.md) |
 | ~5 nov. | NuScale Power | Résultats T3 2026 (estimé) | 2 | à venir |
@@ -18,7 +18,7 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 9 nov. | Constellation Energy | Résultats T3 2026 (estimé) | 3 | à venir |
 | 9-13 nov. | Rocket Lab | Résultats T3 2026 (estimé) | 3 | à venir |
 | 9-13 nov. | AST SpaceMobile | Résultats T3 2026 (estimé, entre le 9 et le 10 nov. selon les sources) | 3 | à venir |
-| Semaine du 9 nov. (visé) | Anthropic | Démarrage visé du marketing formel (roadshow) de l'IPO, tarification visée la semaine suivante, cotation avant Thanksgiving (26/11) | 5 | à venir — rapporté le 29/10 par IFR/Bloomberg/The Motley Fool, non confirmé officiellement par Anthropic |
+| À partir du 10 nov. (plancher réglementaire) | Anthropic | Démarrage du marketing formel (roadshow) de l'IPO — le dépôt public du S-1 le 26/10 impose un délai SEC de 15 jours, fixant le 10/11 comme date plancher ; Bloomberg/Fox Business évoquent toujours la semaine du 9 nov., tarification visée la semaine suivante, cotation avant Thanksgiving (26/11) ; fourchette de prix pas encore publiée (case blanche dans le S-1) | 5 | à venir — non confirmé officiellement par Anthropic |
 | ~10-11 nov. | Oklo | Résultats T3 2026 (estimé) | 2 | à venir |
 | 12 nov. | Anthropic | Entrée en vigueur de la nouvelle politique d'utilisation Claude (comportements abusifs, règles électorales, annoncée le 08/10) | 3 | à venir |
 | 13 nov. | AST SpaceMobile | Date limite « lead plaintiff » — recours collectif en valeurs mobilières Hunter v. AST SpaceMobile (n° 26-cv-00378, W.D. Texas), période du 04/03/2025 au 15/07/2026 | 4 | à venir |
