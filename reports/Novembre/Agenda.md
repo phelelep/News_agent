@@ -5,12 +5,13 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | Date | Entreprise | Événement | Impact attendu | Statut |
 |---|---|---|---|---|
 | 4 mars 2026 (réel, rétroactif) | TerraPower | Permis de construction NRC accordé — réacteur Natrium Kemmerer Unit 1 (Wyoming), 345 MW (pointe 500 MW via stockage à sels fondus), 1er permis NRC délivré pour un réacteur commercial non refroidi à eau légère | 5 | ✓ réalisé — information rétroactive ; date initialement supposée décembre 2026, corrigée le 09/10/2026 |
-| 2 nov. | Apple | Résultats T4 FY2026 (année fiscale complète, confirmé le 06/10) — 1er call aux résultats sous la direction du nouveau CEO John Ternus | 4 | à venir |
-| 2 nov. | BWX Technologies | Résultats T3 2026 (après clôture, confirmé) | 3 | à venir |
-| 2 nov. | Palantir | Résultats T3 2026 (après clôture — date précisée par plusieurs calendriers boursiers, remplace l'estimation « entre le 2 et le 9 nov. ») | 3 | à venir |
-| 3 nov. | AMD | Résultats T3 2026 (date confirmée par communiqué du 06/10, après clôture) | 4 | à venir |
-| 3 nov. | Binance (crypto) | Mise à jour détaillée attendue sur le piratage de 6,3 Md$ (29-30/10) — montant récupéré/gelé, calendrier d'indemnisation ; Binance indique avoir couvert ~95 % des pertes au 01/11 (vs 90 % précédemment) | 4 | à venir |
-| 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | à venir |
+| 2 nov. | Apple | Résultats T4 FY2026 (année fiscale complète, confirmé le 06/10) — 1er call aux résultats sous la direction du nouveau CEO John Ternus | 4 | ✓ réalisé — CA record 114,5 Md$ (+12 %), au-dessus de la guidance (+9 à +11 %) |
+| 2 nov. | BWX Technologies | Résultats T3 2026 (après clôture, confirmé) | 3 | ✓ réalisé — CA 953,0 M$, BPA non-GAAP 1,26 $, guidance 2026 resserrée |
+| 2 nov. | Palantir | Résultats T3 2026 (après clôture — date précisée par plusieurs calendriers boursiers, remplace l'estimation « entre le 2 et le 9 nov. ») | 3 | ✓ réalisé — CA 2,313 Md$ (+96 %), 1er trimestre au-dessus de 2 Md$, nettement au-dessus de la guidance |
+| 3 nov. | AMD | Résultats T3 2026 (date confirmée par communiqué du 06/10, après clôture) | 4 | ✓ réalisé — CA record 13,4 Md$ (+35,6 %), Data Center quasi doublé, au-dessus du haut de la guidance |
+| 3 nov. | États-Unis | Élections de mi-mandat — les Democrats remportent la Chambre ET le Sénat (gain net ≥4 sièges au Sénat) ; bitcoin plonge à ~75 700 $ avant de se stabiliser vers 77-78 000 $, >1 Md$ de sorties ETF spot | 6 | ✓ réalisé |
+| 3 nov. | Binance (crypto) | Mise à jour détaillée attendue sur le piratage de 6,3 Md$ (29-30/10) — montant récupéré/gelé, calendrier d'indemnisation ; Binance indique avoir couvert ~95 % des pertes au 01/11 (vs 90 % précédemment) | 4 | ✓ réalisé (partiel) — pas de nouveau chiffre distinct confirmé au-delà du ~95 % déjà rapporté le 01/11 |
+| 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | à venir — publication ce soir après clôture (guidance : ~1,38 Md$ de CA, +22 %) |
 | ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | → corrigé au 20 octobre 2026, après clôture (SpaceX est cotée depuis son IPO de juin 2026, pas privée) — voir [Agenda Octobre](../Octobre/Agenda.md) |
 | ~5 nov. | NuScale Power | Résultats T3 2026 (estimé) | 2 | à venir |
 | NET 12 nov. (fenêtre 7-21 nov.) | SpaceX / Starship | Flight 15 (Ship 42/Booster 22) — tentative de récupération simultanée du booster ET, pour la 1ère fois, du vaisseau (« double catch ») ; cible resserrée au 12 nov. selon une coordination FAA/trafic aérien repérée le 29/10 (compte SpaceNotices), contre NET 8 nov. précédemment ; chances de succès estimées par Musk à 50-60 % (call du 20/10) | 4 | à venir (à confirmer) |

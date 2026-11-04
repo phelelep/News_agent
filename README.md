@@ -17,6 +17,7 @@ du jour — qualité plutôt que quantité.
 ### Novembre 2026
 
 - [Agenda](reports/Novembre/Agenda.md)
+- [2026-11-04](reports/Novembre/2026-11-04.md)
 - [2026-11-02](reports/Novembre/2026-11-02.md)
 
 ### Octobre 2026
