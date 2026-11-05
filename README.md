@@ -1,16 +1,14 @@
 # News Agent — Veille quotidienne
 
 Rapports de veille financière/tech générés automatiquement sur la watchlist :
-galaxie Elon Musk (SpaceX, Tesla, xAI, Neuralink, The Boring Company), semi-conducteurs
-(NVIDIA, TSMC, ASML, AMD, Broadcom, Arm), géants IA & plateformes (Microsoft, Alphabet,
-Apple, Meta, Amazon, Anthropic), espace & robotique (Rocket Lab, Intuitive Surgical,
-AST SpaceMobile, Palantir, Anduril, Figure AI, Boston Dynamics), énergie (Constellation
-Energy, BWX Technologies, Quanta Services, Oklo, NuScale Power, ainsi qu'un suivi élargi
-aux startups d'énergie renouvelable et de nucléaire avancé).
+1. Galaxie Elon Musk (SpaceX, Tesla, xAI, Neuralink, The Boring Company)
+2. Semi-conducteurs (NVIDIA, TSMC, ASML, AMD, Broadcom, Arm)
+3. Géants IA & plateformes (Microsoft, Alphabet, Apple, Meta, Amazon, Anthropic)
+4. Espace & robotique (Rocket Lab, Intuitive Surgical, AST SpaceMobile, Palantir, Anduril, Figure AI, Boston Dynamics)
+5. énergie (Constellation Energy, BWX Technologies, Quanta Services, Oklo, NuScale Power, ainsi qu'un suivi élargi aux startups d'énergie renouvelable et de nucléaire avancé).
+6. Crypto (ETH, BTC, stablecoins & euro numérique)
 
-Chaque rapport applique une grille d'analyse à 3 questions (valeur réelle / regard
-sceptique / horizon futuriste) et se limite aux 10 événements les plus significatifs
-du jour — qualité plutôt que quantité.
+Site : https://phelelep.github.io/News_agent/ (généré depuis [web/](web/README.md)).
 
 ## Rapports
 
@@ -20,93 +18,3 @@ du jour — qualité plutôt que quantité.
 - [2026-11-05](reports/Novembre/2026-11-05.md)
 - [2026-11-04](reports/Novembre/2026-11-04.md)
 - [2026-11-02](reports/Novembre/2026-11-02.md)
-
-### Octobre 2026
-
-- [Agenda](reports/Octobre/Agenda.md)
-- [2026-10-31](reports/Octobre/2026-10-31.md)
-- [2026-10-30](reports/Octobre/2026-10-30.md)
-- [2026-10-29](reports/Octobre/2026-10-29.md)
-- [2026-10-28](reports/Octobre/2026-10-28.md)
-- [2026-10-27](reports/Octobre/2026-10-27.md)
-- [2026-10-26](reports/Octobre/2026-10-26.md)
-- [2026-10-24](reports/Octobre/2026-10-24.md)
-- [2026-10-23](reports/Octobre/2026-10-23.md)
-- [2026-10-22](reports/Octobre/2026-10-22.md)
-- [2026-10-21](reports/Octobre/2026-10-21.md)
-- [2026-10-20](reports/Octobre/2026-10-20.md)
-- [2026-10-19](reports/Octobre/2026-10-19.md)
-- [2026-10-18](reports/Octobre/2026-10-18.md)
-- [2026-10-17](reports/Octobre/2026-10-17.md)
-- [2026-10-16](reports/Octobre/2026-10-16.md)
-- [2026-10-15](reports/Octobre/2026-10-15.md)
-- [2026-10-14](reports/Octobre/2026-10-14.md)
-- [2026-10-13](reports/Octobre/2026-10-13.md)
-- [2026-10-12](reports/Octobre/2026-10-12.md)
-- [2026-10-11](reports/Octobre/2026-10-11.md)
-- [2026-10-10](reports/Octobre/2026-10-10.md)
-- [2026-10-09](reports/Octobre/2026-10-09.md)
-- [2026-10-08](reports/Octobre/2026-10-08.md)
-- [2026-10-07](reports/Octobre/2026-10-07.md)
-- [2026-10-06](reports/Octobre/2026-10-06.md)
-- [2026-10-05](reports/Octobre/2026-10-05.md)
-- [2026-10-04](reports/Octobre/2026-10-04.md)
-- [2026-10-03](reports/Octobre/2026-10-03.md)
-- [2026-10-02](reports/Octobre/2026-10-02.md)
-- [2026-10-01](reports/Octobre/2026-10-01.md)
-
-### Septembre 2026
-
-- [Agenda](reports/Septembre/Agenda.md)
-- [2026-09-29](reports/Septembre/2026-09-29.md)
-- [2026-09-28](reports/Septembre/2026-09-28.md)
-- [2026-09-27](reports/Septembre/2026-09-27.md)
-- [2026-09-26](reports/Septembre/2026-09-26.md)
-- [2026-09-25](reports/Septembre/2026-09-25.md)
-- [2026-09-24](reports/Septembre/2026-09-24.md)
-- [2026-09-23](reports/Septembre/2026-09-23.md)
-- [2026-09-22](reports/Septembre/2026-09-22.md)
-- [2026-09-20](reports/Septembre/2026-09-20.md)
-- [2026-09-19](reports/Septembre/2026-09-19.md)
-- [2026-09-18](reports/Septembre/2026-09-18.md)
-- [2026-09-17](reports/Septembre/2026-09-17.md)
-- [2026-09-16](reports/Septembre/2026-09-16.md)
-- [2026-09-15](reports/Septembre/2026-09-15.md)
-- [2026-09-14](reports/Septembre/2026-09-14.md)
-- [2026-09-13](reports/Septembre/2026-09-13.md)
-- [2026-09-12](reports/Septembre/2026-09-12.md)
-- [2026-09-11](reports/Septembre/2026-09-11.md)
-- [2026-09-10](reports/Septembre/2026-09-10.md)
-- [2026-09-09](reports/Septembre/2026-09-09.md)
-- [2026-09-08](reports/Septembre/2026-09-08.md)
-- [2026-09-07](reports/Septembre/2026-09-07.md)
-- [2026-09-06](reports/Septembre/2026-09-06.md)
-- [2026-09-05](reports/Septembre/2026-09-05.md)
-- [2026-09-04](reports/Septembre/2026-09-04.md)
-- [2026-09-03](reports/Septembre/2026-09-03.md)
-- [2026-09-02](reports/Septembre/2026-09-02.md)
-- [2026-09-01](reports/Septembre/2026-09-01.md)
-
-### Août 2026
-
-- [2026-08-31](reports/Aout/2026-08-31.md)
-- [2026-08-30](reports/Aout/2026-08-30.md)
-- [2026-08-29](reports/Aout/2026-08-29.md)
-- [2026-08-28](reports/Aout/2026-08-28.md)
-- [2026-08-27](reports/Aout/2026-08-27.md)
-- [2026-08-26](reports/Aout/2026-08-26.md)
-- [2026-08-25](reports/Aout/2026-08-25.md)
-- [2026-08-24](reports/Aout/2026-08-24.md)
-- [2026-08-23](reports/Aout/2026-08-23.md)
-- [2026-08-22](reports/Aout/2026-08-22.md)
-- [2026-08-21](reports/Aout/2026-08-21.md)
-- [2026-08-20](reports/Aout/2026-08-20.md)
-- [2026-08-19](reports/Aout/2026-08-19.md)
-- [2026-08-18](reports/Aout/2026-08-18.md)
-- [2026-08-17](reports/Aout/2026-08-17.md)
-- [2026-08-16](reports/Aout/2026-08-16.md)
-- [2026-08-15](reports/Aout/2026-08-15.md)
-- [2026-08-14](reports/Aout/2026-08-14.md)
-- [2026-08-13](reports/Aout/2026-08-13.md)
-- [2026-08-12](reports/Aout/2026-08-12.md)
-- [2026-08-11](reports/Aout/2026-08-11.md)
