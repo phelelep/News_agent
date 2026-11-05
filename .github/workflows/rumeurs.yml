@@ -1,0 +1,31 @@
+name: Rumeurs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rumeurs
+  cancel-in-progress: false
+
+env:
+  ROUTINE_ID: trig_0112MhYo11HETSY8BNTt48rP
+
+jobs:
+  fire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Déclencher la routine
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          curl --fail-with-body --silent --show-error -o /dev/null -X POST \
+            "https://api.anthropic.com/v1/claude_code/routines/$ROUTINE_ID/fire" \
+            -H "Authorization: Bearer $API_KEY" \
+            -H "anthropic-beta: experimental-cc-routine-2026-04-01" \
+            -H "anthropic-version: 2023-06-01" \
+            -H "Content-Type: application/json" \
+            -d '{"text": "Déclenché depuis le bouton du site."}'

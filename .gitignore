@@ -1,3 +1,4 @@
 .env
 web/_site/
 __pycache__/
+.claude/

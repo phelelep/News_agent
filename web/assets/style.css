@@ -1,0 +1,216 @@
+:root {
+  color-scheme: light dark;
+  --bg: #faf8f3;
+  --surface: #f1eee6;
+  --ink: #1c1b19;
+  --muted: #625e56;
+  --line: #d9d4c8;
+  --accent: #0b5c63;
+  --accent-ink: #ffffff;
+  --up: #17693f;
+  --down: #a8261d;
+  --high: #8f2b12;
+  --high-bg: #f8e2d8;
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615;
+    --surface: #211f1d;
+    --ink: #edeae3;
+    --muted: #a8a397;
+    --line: #38352f;
+    --accent: #6cc4cc;
+    --accent-ink: #0e2b2e;
+    --up: #6fcf9b;
+    --down: #f29a90;
+    --high: #ffc0a6;
+    --high-bg: #4a2519;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 var(--serif);
+  font-variant-numeric: lining-nums;
+}
+
+a { color: var(--accent); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+h1, h2, h3 { font-family: var(--sans); line-height: 1.25; }
+h1 { font-size: 2rem; margin: 0 0 .75rem; }
+h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.02rem; margin: 1.5rem 0 .25rem; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .25rem 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.25rem 16px .75rem;
+  border-bottom: 2px solid var(--ink);
+  font-family: var(--sans);
+}
+.brand { color: var(--ink); font-size: 1.3rem; font-weight: 700; text-decoration: none; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; font-size: .95rem; }
+.site-header nav a { color: var(--muted); text-decoration: none; }
+.site-header nav a:hover, .site-header nav a[aria-current] { color: var(--ink); }
+.site-header nav a[aria-current] { font-weight: 600; }
+
+main { max-width: 1120px; margin: 0 auto; padding: 1.5rem 16px 3rem; }
+
+.site-footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 16px 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font: .85rem/1.5 var(--sans);
+}
+
+.muted { color: var(--muted); font: .85rem/1.5 var(--sans); }
+.kicker { margin: 0 0 .25rem; color: var(--muted); font: 600 .85rem/1.4 var(--sans); }
+
+.home { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 3rem; }
+.lead h1 { font-size: 2.4rem; }
+.brief { font-size: 1.2rem; line-height: 1.55; }
+.brief p { margin: 0 0 1rem; }
+
+.top-events { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+.top-events li {
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  gap: .5rem;
+  align-items: baseline;
+  padding: .55rem 0;
+  border-bottom: 1px solid var(--line);
+  font: .98rem/1.4 var(--sans);
+}
+
+.impact {
+  display: inline-block;
+  padding: 0 .4rem;
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--muted);
+  font: 600 .78rem/1.6 var(--sans);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+.impact-high { background: var(--high-bg); color: var(--high); }
+
+.side { font-family: var(--sans); font-size: .92rem; }
+.side section + section { margin-top: 2rem; }
+.side h2 { margin-top: 0; padding-bottom: .35rem; border-bottom: 1px solid var(--ink); }
+
+.calendar { list-style: none; margin: 0 0 .75rem; padding: 0; }
+.calendar li { padding: .5rem 0; border-bottom: 1px solid var(--line); line-height: 1.35; }
+.calendar span { display: block; margin-top: .15rem; color: var(--muted); font-size: .85rem; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font: .9rem/1.4 var(--sans); }
+th, td { padding: .4rem .5rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+thead th { color: var(--muted); font-weight: 600; }
+
+.quotes th, .quotes td { padding: .28rem .25rem; font-variant-numeric: tabular-nums; }
+.quotes th:not(:first-child), .quotes td { text-align: right; white-space: nowrap; }
+.quotes tbody th { font-weight: 600; }
+.up { color: var(--up); }
+.down { color: var(--down); }
+
+.button {
+  display: inline-block;
+  padding: .55rem .95rem;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: 600 .92rem/1.3 var(--sans);
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover { filter: brightness(1.1); }
+.button:disabled { opacity: .6; cursor: progress; }
+
+.link-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: .85rem/1.5 var(--sans);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.rumor-action { margin: .75rem 0 1rem; }
+.rumor-action p { min-height: 1.3em; margin: .5rem 0 .25rem; }
+
+dialog {
+  width: min(420px, calc(100vw - 32px));
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: .95rem/1.5 var(--sans);
+}
+dialog::backdrop { background: rgb(0 0 0 / .5); }
+dialog h2 { margin-top: 0; }
+dialog label { display: block; margin-bottom: .25rem; font-weight: 600; }
+dialog input {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.dialog-actions { display: flex; justify-content: flex-end; align-items: center; gap: 1rem; margin-top: 1rem; }
+
+.prose { max-width: 720px; }
+.prose.wide { max-width: none; }
+.prose ul { padding-left: 1.2rem; }
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 720px;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font: .92rem/1.4 var(--sans);
+}
+
+.tabs { display: flex; flex-wrap: wrap; gap: .25rem 1rem; margin-bottom: 1rem; font: .92rem/1.4 var(--sans); }
+.tabs a[aria-current] { color: var(--ink); font-weight: 600; text-decoration: none; }
+
+.archive ul { list-style: none; margin: 0; padding: 0; }
+.archive li {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 1rem;
+  padding: .55rem 0;
+  border-bottom: 1px solid var(--line);
+  font: .92rem/1.45 var(--sans);
+}
+.archive span { color: var(--muted); }
+
+@media (max-width: 860px) {
+  .home { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .lead h1 { font-size: 2rem; }
+  .brief { font-size: 1.1rem; }
+  .archive li { grid-template-columns: minmax(0, 1fr); gap: .1rem; }
+}

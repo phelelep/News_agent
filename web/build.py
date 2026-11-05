@@ -1,0 +1,327 @@
+#!/usr/bin/env python3
+"""Génère le site statique dans web/_site à partir de reports/ et watchlist.md."""
+import html
+import json
+import re
+import shutil
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+import markdown
+
+ROOT = Path(__file__).resolve().parent.parent
+WEB = ROOT / "web"
+SITE = WEB / "_site"
+REPORTS = ROOT / "reports"
+
+MONTHS_FR = [
+    "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
+    "août", "septembre", "octobre", "novembre", "décembre",
+]
+REPORT_NAME = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+RUMOR_NAME = re.compile(r"^rumeurs_(\d{4})(\d{2})(\d{2})$", re.I)
+CSP = (
+    "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; "
+    "connect-src https://api.github.com; base-uri 'none'; form-action 'none'"
+)
+
+
+def fr_date(iso):
+    year, month, day = iso.split("-")
+    return f"{int(day)} {MONTHS_FR[int(month) - 1]} {year}"
+
+
+def plain(text):
+    """Retire la syntaxe Markdown d'un extrait."""
+    text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
+    return re.sub(r"[*_`]", "", text).strip()
+
+
+def excerpt(text, limit):
+    text = plain(text)
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "…"
+
+
+def safe_url(match):
+    """Les contenus viennent du web : seuls http(s) et les liens relatifs passent."""
+    attribute, url = match.group(1), match.group(2)
+    decoded = re.sub(r"[\x00-\x20]", "", html.unescape(url)).lower()
+    scheme = re.match(r"^([a-z][a-z0-9+.\-]*):", decoded)
+    if scheme and scheme.group(1) not in ("http", "https"):
+        return f'{attribute}="#"'
+    return match.group(0)
+
+
+def render(source):
+    converter = markdown.Markdown(extensions=["tables", "sane_lists"])
+    # Le HTML brut des fichiers Markdown est affiché comme du texte, jamais interprété.
+    converter.preprocessors.deregister("html_block")
+    converter.inlinePatterns.deregister("html")
+    body = converter.convert(source)
+    body = re.sub(r'\b(href|src)="([^"]*)"', safe_url, body)
+    body = re.sub(r'href="(?!https?:)([^"#]*)\.md(#[^"]*)?"', r'href="\1.html\2"', body)
+    body = body.replace('<a href="http', '<a rel="noopener noreferrer" href="http')
+    body = re.sub(
+        r" · Impact (\d+)/10</h3>",
+        lambda m: f' <span class="impact{" impact-high" if int(m.group(1)) >= 7 else ""}">'
+        f"{m.group(1)}/10</span></h3>",
+        body,
+    )
+    return body.replace("<table>", '<div class="table-wrap"><table>').replace(
+        "</table>", "</table></div>"
+    )
+
+
+def page(title, body, prefix, active=""):
+    links = [
+        ("index.html", "Aujourd'hui", "home"),
+        ("rapports.html", "Rapports", "reports"),
+        ("agenda.html", "Agenda", "agenda"),
+        ("rumeurs.html", "Rumeurs", "rumors"),
+    ]
+    nav = "".join(
+        f'<a href="{prefix}{href}"{" aria-current=page" if key == active else ""}>{label}</a>'
+        for href, label, key in links
+    )
+    return f"""<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="{CSP}">
+<title>{html.escape(title)}</title>
+<link rel="stylesheet" href="{prefix}assets/style.css">
+<script src="{prefix}assets/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="{prefix}index.html">News Agent</a>
+<nav aria-label="Navigation principale">{nav}</nav>
+</header>
+<main>
+{body}
+</main>
+<footer class="site-footer">Veille générée automatiquement. Rumeurs non vérifiées, rien ici n'est un conseil en investissement.</footer>
+</body>
+</html>
+"""
+
+
+def write(path, content):
+    target = SITE / path
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(content, encoding="utf-8")
+
+
+def load_reports():
+    reports = []
+    for file in REPORTS.glob("*/*.md"):
+        if REPORT_NAME.match(file.stem):
+            source = file.read_text(encoding="utf-8")
+            reports.append({"date": file.stem, "month": file.parent.name, "source": source})
+    return sorted(reports, key=lambda r: r["date"], reverse=True)
+
+
+def section(source, title):
+    match = re.search(rf"^## {title}\s*$(.*?)(?=^## |^---\s*$|\Z)", source, re.M | re.S)
+    return match.group(1).strip() if match else ""
+
+
+def events(source):
+    found = re.findall(r"^### (.+?) · Impact (\d+)/10\s*$", source, re.M)
+    return sorted(((plain(t), int(n)) for t, n in found), key=lambda e: -e[1])
+
+
+def upcoming(month, limit=6):
+    agenda = REPORTS / month / "Agenda.md"
+    if not agenda.exists():
+        return []
+    rows = []
+    for line in agenda.read_text(encoding="utf-8").splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) >= 5 and cells[4].startswith("à venir"):
+            rows.append(cells)
+    return rows[:limit]
+
+
+def load_quotes():
+    try:
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "cours.py"), "--json"],
+            capture_output=True, encoding="utf-8", timeout=120, check=True,
+        )
+        return json.loads(result.stdout)["cours"]
+    except (subprocess.SubprocessError, ValueError, KeyError) as error:
+        print(f"Cours indisponibles : {error}", file=sys.stderr)
+        return []
+
+
+def quotes_block(quotes):
+    if not quotes:
+        return '<p class="muted">Cours indisponibles pour le moment.</p>'
+    rows = ""
+    for q in quotes:
+        direction = "up" if q["variation"] >= 0 else "down"
+        price = f"{q['prix']:,.2f}".replace(",", " ").replace(".", ",")
+        change = f"{q['variation']:+.2f}".replace(".", ",")
+        rows += (
+            f'<tr><th scope="row" title="{html.escape(q["nom"])}">{html.escape(q["ticker"])}</th>'
+            f'<td>{price}</td><td class="{direction}">{change} %</td></tr>'
+        )
+    latest = fr_date(max(q["date"] for q in quotes))
+    return (
+        '<div class="table-wrap"><table class="quotes"><thead><tr><th scope="col">Ticker</th>'
+        '<th scope="col">USD</th><th scope="col">Var.</th></tr></thead>'
+        f'<tbody>{rows}</tbody></table></div><p class="muted">Dernière clôture connue, au {latest}. '
+        "Crypto : variation sur 24 h.</p>"
+    )
+
+
+def rumor_button():
+    return """<div class="rumor-action">
+<button type="button" id="rumor-button" class="button">Générer les rumeurs</button>
+<p id="rumor-status" class="muted" role="status"></p>
+<button type="button" id="rumor-forget" class="link-button" hidden>Oublier le token de cet appareil</button>
+</div>
+<dialog id="rumor-dialog" aria-labelledby="rumor-dialog-title">
+<h2 id="rumor-dialog-title">Token GitHub</h2>
+<p>Colle ton token GitHub limité à ce dépôt. Il reste dans ce navigateur et sert uniquement à lancer le workflow.</p>
+<label for="rumor-token">Token</label>
+<input id="rumor-token" type="password" autocomplete="off" spellcheck="false">
+<div class="dialog-actions">
+<button type="button" id="rumor-cancel" class="link-button">Annuler</button>
+<button type="button" id="rumor-confirm" class="button">Lancer</button>
+</div>
+</dialog>"""
+
+
+def build_home(reports, quotes):
+    latest = reports[0]
+    brief = render(section(latest["source"], "En bref"))
+    top = "".join(
+        f'<li><span class="impact{" impact-high" if n >= 7 else ""}">{n}/10</span> {html.escape(t)}</li>'
+        for t, n in events(latest["source"])[:5]
+    )
+    report_url = f'reports/{latest["month"]}/{latest["date"]}.html'
+    calendar = "".join(
+        f"<li><strong>{html.escape(excerpt(c[0], 34))}</strong> · {html.escape(plain(c[1]))}"
+        f"<span>{html.escape(excerpt(c[2], 96))}</span></li>"
+        for c in upcoming(latest["month"])
+    )
+    body = f"""<div class="home">
+<section class="lead" aria-labelledby="lead-title">
+<p class="kicker">Veille du {fr_date(latest["date"])}</p>
+<h1 id="lead-title">En bref</h1>
+<div class="brief">{brief}</div>
+{f'<h2>Les faits du jour</h2><ul class="top-events">{top}</ul>' if top else ""}
+<p><a class="button" href="{report_url}">Lire le rapport complet</a></p>
+</section>
+<aside class="side">
+<section aria-labelledby="side-rumors"><h2 id="side-rumors">Rumeurs</h2>{rumor_button()}<p><a href="rumeurs.html">Voir les rumeurs</a></p></section>
+<section aria-labelledby="side-agenda"><h2 id="side-agenda">À venir</h2><ul class="calendar">{calendar}</ul><p><a href="agenda.html">Tout l'agenda</a></p></section>
+<section aria-labelledby="side-quotes"><h2 id="side-quotes">Cours</h2>{quotes_block(quotes)}</section>
+</aside>
+</div>"""
+    write("index.html", page("News Agent", body, "", "home"))
+
+
+def build_reports(reports):
+    for index, report in enumerate(reports):
+        newer = reports[index - 1] if index else None
+        older = reports[index + 1] if index + 1 < len(reports) else None
+
+        def link(other, label):
+            if not other:
+                return "<span></span>"
+            return f'<a href="../{other["month"]}/{other["date"]}.html">{label}</a>'
+
+        pager = f'<nav class="pager" aria-label="Rapports voisins">{link(older, "← Veille précédente")}{link(newer, "Veille suivante →")}</nav>'
+        body = f'<article class="prose">{render(report["source"])}</article>{pager}'
+        write(f'reports/{report["month"]}/{report["date"]}.html',
+              page(f'Veille du {fr_date(report["date"])}', body, "../../", "reports"))
+
+    groups = {}
+    for report in reports:
+        groups.setdefault(report["date"][:7], []).append(report)
+    body = '<h1>Rapports</h1>'
+    for key, items in groups.items():
+        year, month = key.split("-")
+        body += f'<section class="archive"><h2>{MONTHS_FR[int(month) - 1].capitalize()} {year}</h2><ul>'
+        for report in items:
+            brief = excerpt(section(report["source"], "En bref"), 150)
+            body += (
+                f'<li><a href="reports/{report["month"]}/{report["date"]}.html">{fr_date(report["date"])}</a>'
+                f"<span>{html.escape(brief)}</span></li>"
+            )
+        body += "</ul></section>"
+    write("rapports.html", page("Rapports", body, "", "reports"))
+
+
+def build_agendas(reports):
+    folders = {}
+    for report in reports:
+        folders.setdefault(report["month"], report["date"])
+    for file in REPORTS.glob("*/Agenda.md"):
+        folders.setdefault(file.parent.name, "9999")
+    agendas = [m for m in sorted(folders, key=folders.get, reverse=True) if (REPORTS / m / "Agenda.md").exists()]
+
+    for month in agendas:
+        tabs = "".join(
+            f'<a href="../{m}/Agenda.html"{" aria-current=page" if m == month else ""}>{m}</a>'
+            for m in agendas
+        )
+        source = (REPORTS / month / "Agenda.md").read_text(encoding="utf-8")
+        body = f'<nav class="tabs" aria-label="Mois">{tabs}</nav><article class="prose wide">{render(source)}</article>'
+        write(f"reports/{month}/Agenda.html", page(f"Agenda {month}", body, "../../", "agenda"))
+
+    current = reports[0]["month"]
+    target = current if current in agendas else agendas[0]
+    redirect = f'<p>Agenda du mois : <a href="reports/{target}/Agenda.html">{target}</a></p>'
+    write("agenda.html", page("Agenda", redirect, "", "agenda").replace(
+        "<title>", f'<meta http-equiv="refresh" content="0; url=reports/{target}/Agenda.html"><title>', 1))
+
+
+def rumor_files():
+    found = []
+    for file in REPORTS.glob("*/*.md"):
+        daily = RUMOR_NAME.match(file.stem)
+        if daily:
+            found.append(("-".join(daily.groups()), file))
+        elif file.stem.lower() == "rumeurs":
+            dates = [p.stem for p in file.parent.glob("*.md") if REPORT_NAME.match(p.stem)]
+            found.append((max(dates, default="0000"), file))
+    return sorted(found, key=lambda item: item[0], reverse=True)
+
+
+def build_rumors():
+    blocks = ""
+    for _, file in rumor_files():
+        source = re.sub(r"^# .*$", "", file.read_text(encoding="utf-8"), count=1, flags=re.M)
+        blocks += f'<section class="prose">{render(source)}</section>'
+    if not blocks:
+        blocks = '<p class="muted">Aucune rumeur générée pour le moment.</p>'
+    body = f'<h1>Rumeurs</h1><p class="muted">🟢 recoupée · 🟡 non confirmée</p>{rumor_button()}{blocks}'
+    write("rumeurs.html", page("Rumeurs", body, "", "rumors"))
+
+
+def main():
+    shutil.rmtree(SITE, ignore_errors=True)
+    shutil.copytree(WEB / "assets", SITE / "assets")
+    (SITE / ".nojekyll").write_text("", encoding="utf-8")
+    reports = load_reports()
+    if not reports:
+        sys.exit("Aucun rapport trouvé dans reports/.")
+    build_home(reports, load_quotes())
+    build_reports(reports)
+    build_agendas(reports)
+    build_rumors()
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    print(f"{len(reports)} rapports générés dans {SITE} ({stamp})")
+
+
+if __name__ == "__main__":
+    main()

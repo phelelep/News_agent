@@ -95,9 +95,10 @@ def fr_number(value):
 def markdown(quotes, missing):
     lines = ["| Actif | Ticker | Cours | Var. | Date |", "|---|---|---:|---:|---|"]
     for q in quotes:
+        change = f"{q['variation']:+.2f}".replace(".", ",")
         lines.append(
             f"| {q['nom']} | {q['ticker']} | {fr_number(q['prix'])} {q['devise']} "
-            f"| {q['variation']:+.2f} % | {q['date']} |".replace(".", ",", 0)
+            f"| {change} % | {q['date']} |"
         )
     if missing:
         lines += ["", f"Cours indisponibles : {', '.join(missing)}."]
@@ -108,6 +109,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
+    sys.stdout.reconfigure(encoding="utf-8")
     quotes, missing = collect()
     if not quotes:
         print("Aucun cours récupéré.", file=sys.stderr)
