@@ -11,15 +11,15 @@ Historique et calendrier des événements majeurs à horizon plus lointain pour 
 | 3 nov. | AMD | Résultats T3 2026 (date confirmée par communiqué du 06/10, après clôture) | 4 | ✓ réalisé — CA record 13,4 Md$ (+35,6 %), Data Center quasi doublé, au-dessus du haut de la guidance |
 | 3 nov. | États-Unis | Élections de mi-mandat — les Democrats remportent la Chambre ET le Sénat (gain net ≥4 sièges au Sénat) ; bitcoin plonge à ~75 700 $ avant de se stabiliser vers 77-78 000 $, >1 Md$ de sorties ETF spot | 6 | ✓ réalisé |
 | 3 nov. | Binance (crypto) | Mise à jour détaillée attendue sur le piratage de 6,3 Md$ (29-30/10) — montant récupéré/gelé, calendrier d'indemnisation ; Binance indique avoir couvert ~95 % des pertes au 01/11 (vs 90 % précédemment) | 4 | ✓ réalisé (partiel) — pas de nouveau chiffre distinct confirmé au-delà du ~95 % déjà rapporté le 01/11 |
-| 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | à venir — publication ce soir après clôture (guidance : ~1,38 Md$ de CA, +22 %) |
+| 4 nov., 20h00 UTC | Arm | Résultats T2 FY2027 (date confirmée) | 3 | ✓ réalisé — CA 1 443 M$ (+27 %), au-dessus de la guidance (1,38 Md$) ; BPA non-GAAP 0,52 $ (+33 %) ; guidance T3 relevée à 1,54 Md$ de CA |
 | ~5 nov. | SpaceX | Résultats T3 2026 (non confirmé, entreprise privée) | 2 | → corrigé au 20 octobre 2026, après clôture (SpaceX est cotée depuis son IPO de juin 2026, pas privée) — voir [Agenda Octobre](../Octobre/Agenda.md) |
-| ~5 nov. | NuScale Power | Résultats T3 2026 (estimé) | 2 | à venir |
+| 5 nov., ~17h00 ET | NuScale Power | Résultats T3 2026 (date confirmée, après clôture) | 2 | à venir — publication ce soir ; chiffres non encore disponibles |
 | NET 12 nov. (fenêtre 7-21 nov.) | SpaceX / Starship | Flight 15 (Ship 42/Booster 22) — tentative de récupération simultanée du booster ET, pour la 1ère fois, du vaisseau (« double catch ») ; cible resserrée au 12 nov. selon une coordination FAA/trafic aérien repérée le 29/10 (compte SpaceNotices), contre NET 8 nov. précédemment ; chances de succès estimées par Musk à 50-60 % (call du 20/10) | 4 | à venir (à confirmer) |
 | 9 nov. | Rocket Lab / Iridium | Réplique d'Iridium attendue au dossier FCC (après l'échéance d'opposition du 30/10, oppositions de Ligado et SpaceX) — voir [Agenda Octobre](../Octobre/Agenda.md) | 3 | à venir |
 | 9 nov. | Constellation Energy | Résultats T3 2026 (estimé) | 3 | à venir |
 | 9-13 nov. | Rocket Lab | Résultats T3 2026 (estimé) | 3 | à venir |
-| 9-13 nov. | AST SpaceMobile | Résultats T3 2026 (estimé, entre le 9 et le 10 nov. selon les sources) | 3 | à venir |
-| Semaine du 9 nov. (visé) | Anthropic | Démarrage visé du marketing formel (roadshow) de l'IPO, tarification visée la semaine suivante, cotation avant Thanksgiving (26/11) | 5 | à venir — rapporté le 29/10 par IFR/Bloomberg/The Motley Fool, non confirmé officiellement par Anthropic |
+| 9 nov. | AST SpaceMobile | Résultats T3 2026 (date resserrée au 9 nov. après clôture par plusieurs calendriers boursiers, remplace l'estimation « 9-13 nov. ») | 3 | à venir |
+| Semaine du 9-10 nov. (visé) | Anthropic | Démarrage visé du marketing formel (roadshow) de l'IPO, tarification visée la semaine suivante, cotation avant Thanksgiving (26/11) | 5 | à venir — rapporté le 29/10 par IFR/Bloomberg/The Motley Fool ; contrainte réglementaire (dépôt public ≥15 j. avant roadshow après le dépôt confidentiel du 26/10) situe le démarrage le plus tôt possible au 10/11 ; non confirmé officiellement par Anthropic |
 | ~10-11 nov. | Oklo | Résultats T3 2026 (estimé) | 2 | à venir |
 | 12 nov. | Anthropic | Entrée en vigueur de la nouvelle politique d'utilisation Claude (comportements abusifs, règles électorales, annoncée le 08/10) | 3 | à venir |
 | 13 nov. | AST SpaceMobile | Date limite « lead plaintiff » — recours collectif en valeurs mobilières Hunter v. AST SpaceMobile (n° 26-cv-00378, W.D. Texas), période du 04/03/2025 au 15/07/2026 | 4 | à venir |
