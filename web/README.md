@@ -14,7 +14,8 @@ python -m http.server 8000 --directory web/_site
 ## Rumeurs
 
 Le site affiche les fichiers `reports/<Mois>/rumeurs_*.md` écrits par la routine, sans bouton.
-Ligne attendue : `- <rumeur> (<proba> %, résolution <JJ/MM/AAAA>) — [Polymarket](lien) · 🟢`.
+Ligne attendue : `- <rumeur> (<proba> %, résolution <JJ/MM/AAAA>) — [Polymarket](lien) · [Média](lien) · niveau N/8 · recoupée|non confirmée`.
+Le niveau (1 jaune, 2 vert, 3 bleu, 4 rouge, 5 rose, 6 violet, 7 violet foncé, 8 noir) colore la ligne ; le parseur est tolérant sur l'ordre des éléments.
 
 ## Bouton « Add to watchlist »
 

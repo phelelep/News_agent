@@ -329,38 +329,81 @@ def rumor_files():
     return sorted(found, key=lambda item: item[0], reverse=True)
 
 
-ROW = re.compile(
-    r"^- (?P<text>.+?)"
-    r"(?: \((?P<proba>\d+(?:[.,]\d+)?) ?%(?:, résolution (?P<end>[\d/\-]+))?\))?"
-    r"(?: — (?P<sources>.+?))?"
-    r" · (?P<level>🟢|🟡)\s*$"
-)
 LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+PROBA = re.compile(r"\((\d+(?:[.,]\d+)?)\s*%")
+END = re.compile(r"résolution\s+([\d/\-]+)")
+LEVEL = re.compile(r"niveau\s+([1-8])\s*/\s*8", re.I)
+TEXT_END = re.compile(r"\s+\(\d+(?:[.,]\d+)?\s*%|\s+—\s+|\s+·\s+")
+LEVEL_NAMES = ["Jaune", "Vert", "Bleu", "Rouge", "Rose", "Violet", "Violet foncé", "Noir"]
 
 
-def sources_html(raw):
-    links = "".join(
+def sources_html(links):
+    items = "".join(
         f'<a rel="noopener noreferrer" href="{html.escape(url)}">{html.escape(plain(label))}</a>'
-        for label, url in LINK.findall(raw or "")
+        for label, url in links
     )
-    return f'<span class="sources">{links}</span>' if links else "—"
+    return f'<span class="sources">{items}</span>' if items else "—"
 
 
-def rumor_row(match):
-    level = "confirmed" if match["level"] == "🟢" else "unconfirmed"
-    label = "Recoupée" if level == "confirmed" else "Non confirmée"
-    if match["proba"]:
-        value = float(match["proba"].replace(",", "."))
-        shown = f'{match["proba"]} %'
+def parse_rumor(line):
+    """Lecture tolérante d'une ligne de rumeur ; None si ce n'est pas une rumeur."""
+    if not line.startswith("- "):
+        return None
+    body = line[2:]
+    proba, end, level = PROBA.search(body), END.search(body), LEVEL.search(body)
+    lowered = body.lower()
+    if "non confirmée" in lowered or "🟡" in body:
+        confirmed = False
+    elif "recoupée" in lowered or "🟢" in body:
+        confirmed = True
+    else:
+        confirmed = None
+    if not (proba or level or confirmed is not None):
+        return None
+    return {
+        "text": plain(TEXT_END.split(body)[0]),
+        "proba": proba.group(1) if proba else "",
+        "end": end.group(1) if end else "",
+        "level": int(level.group(1)) if level else 0,
+        "confirmed": confirmed,
+        "links": LINK.findall(body),
+    }
+
+
+def rumor_row(rumor):
+    level = rumor["level"]
+    if level:
+        name = LEVEL_NAMES[level - 1]
+        badge = f'<span class="level lvl-{level}" title="Niveau {level}/8 : {name}">{level}/8</span>'
+    else:
+        badge = '<span class="level lvl-0" title="Niveau non renseigné">—</span>'
+    if rumor["proba"]:
+        value = float(rumor["proba"].replace(",", "."))
+        shown = f'{rumor["proba"]} %'
         proba = f'<meter min="0" max="100" value="{value}">{shown}</meter> <strong>{shown}</strong>'
     else:
         proba = "—"
+    status = {True: ("confirmed", "Recoupée"), False: ("unconfirmed", "Non confirmée")}.get(
+        rumor["confirmed"], ("", "—")
+    )
+    status_html = f'<span class="badge {status[0]}">{status[1]}</span>' if status[0] else "—"
     return (
-        f'<tr><td data-label="Niveau"><span class="badge {level}">{match["level"]} {label}</span></td>'
-        f'<td data-label="Rumeur" class="rumor-text">{html.escape(plain(match["text"]))}</td>'
+        f'<tr><td data-label="Niveau">{badge}</td>'
+        f'<td data-label="Rumeur" class="rumor-text">{html.escape(rumor["text"])}</td>'
         f'<td data-label="Probabilité" class="proba">{proba}</td>'
-        f'<td data-label="Résolution">{html.escape(match["end"] or "—")}</td>'
-        f'<td data-label="Source">{sources_html(match["sources"])}</td></tr>'
+        f'<td data-label="Résolution">{html.escape(rumor["end"] or "—")}</td>'
+        f'<td data-label="Statut">{status_html}</td>'
+        f'<td data-label="Sources">{sources_html(rumor["links"])}</td></tr>'
+    )
+
+
+def level_legend():
+    chips = "".join(
+        f'<li><span class="level lvl-{i}">{i}</span>{name}</li>' for i, name in enumerate(LEVEL_NAMES, 1)
+    )
+    return (
+        '<ul class="legend" aria-label="Légende des niveaux">'
+        f"<li class=\"legend-title\">Niveau (importance et probabilité)</li>{chips}</ul>"
     )
 
 
@@ -370,15 +413,15 @@ def rumor_day(date, lines):
         line = line.strip()
         if not line:
             continue
-        match = ROW.match(line)
-        if match:
-            rows += rumor_row(match)
+        rumor = parse_rumor(line)
+        if rumor:
+            rows += rumor_row(rumor)
         else:
             notes += f"<li>{html.escape(plain(line[2:] if line.startswith('- ') else line))}</li>"
     table = (
         '<div class="table-wrap"><table class="rumors"><thead><tr><th scope="col">Niveau</th>'
         '<th scope="col">Rumeur</th><th scope="col">Probabilité</th><th scope="col">Résolution</th>'
-        f'<th scope="col">Source</th></tr></thead><tbody>{rows}</tbody></table></div>'
+        f'<th scope="col">Statut</th><th scope="col">Sources</th></tr></thead><tbody>{rows}</tbody></table></div>'
         if rows else ""
     )
     count = rows.count("<tr>")
@@ -398,7 +441,8 @@ def build_rumors():
     body = (
         '<h1>Rumeurs</h1><p class="muted">Mises à jour automatiquement. '
         "Les probabilités viennent de Polymarket : ce sont des avis de marché, pas des faits. "
-        "🟢 recoupée par la presse · 🟡 non confirmée.</p>" + blocks
+        "Plus le niveau est élevé (donc la couleur foncée), plus la rumeur est importante et probable.</p>"
+        + level_legend() + blocks
     )
     write("rumeurs.html", page("Rumeurs", body, "", "rumors"))
 

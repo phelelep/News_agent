@@ -251,3 +251,24 @@ dialog input {
   .rumor-text { min-width: 0; }
 }
 .notes li { font: inherit; font-size: .95rem; }
+
+.level {
+  --c: #8a8f98; --t: #fff;
+  display: inline-flex; align-items: center; justify-content: center; min-width: 2.6rem;
+  padding: .1rem .5rem; border-radius: 999px; font-size: .8rem; font-weight: 700;
+  font-variant-numeric: tabular-nums; background: var(--c); color: var(--t);
+  box-shadow: inset 0 0 0 1px rgb(128 128 128 / .55);
+}
+.lvl-0 { --c: transparent; --t: inherit; }
+.lvl-1 { --c: #f4d03f; --t: #1b1b1b; }
+.lvl-2 { --c: #4cae4f; --t: #07210a; }
+.lvl-3 { --c: #2f7fd8; }
+.lvl-4 { --c: #d93a3a; }
+.lvl-5 { --c: #f06ca8; --t: #2a0716; }
+.lvl-6 { --c: #9b4fd0; }
+.lvl-7 { --c: #4b1d7a; }
+.lvl-8 { --c: #0b0b0d; }
+.legend { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem; list-style: none; padding: 0; margin: 1rem 0 0; font-size: .85rem; }
+.legend li { display: inline-flex; align-items: center; gap: .35rem; }
+.legend .level { min-width: 1.6rem; padding: .05rem .4rem; }
+.legend-title { font-weight: 600; opacity: .75; }
