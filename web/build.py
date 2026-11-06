@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Génère le site statique dans web/_site à partir de reports/ et watchlist.md."""
+import hashlib
 import html
 import json
 import re
@@ -20,6 +21,15 @@ MONTHS_FR = [
     "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
     "août", "septembre", "octobre", "novembre", "décembre",
 ]
+def asset_version():
+    """Empreinte des fichiers du site : l'URL change quand ils changent, le cache du navigateur est contourné."""
+    digest = hashlib.sha1()
+    for file in sorted((WEB / "assets").glob("*")):
+        digest.update(file.read_bytes())
+    return digest.hexdigest()[:10]
+
+
+ASSET_VERSION = asset_version()
 REPORT_NAME = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 RUMOR_NAME = re.compile(r"^rumeurs_(\d{4})(\d{2})(\d{2})$", re.I)
 CSP = (
@@ -117,9 +127,9 @@ def page(title, body, prefix, active=""):
 <meta name="theme-color" content="#000000">
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
 <title>{html.escape(title)}</title>
-<link rel="stylesheet" href="{prefix}assets/style.css">
-<script src="{prefix}assets/app.js" defer></script>
-<script src="{prefix}assets/nav.js" defer></script>
+<link rel="stylesheet" href="{prefix}assets/style.css?v={ASSET_VERSION}">
+<script src="{prefix}assets/app.js?v={ASSET_VERSION}" defer></script>
+<script src="{prefix}assets/nav.js?v={ASSET_VERSION}" defer></script>
 </head>
 <body>
 <header class="site-header">
