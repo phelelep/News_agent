@@ -87,6 +87,14 @@ def render(source):
     )
 
 
+ICONS = {
+    "home": '<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M10 20v-5.5h4V20"/>',
+    "reports": '<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/>',
+    "agenda": '<rect x="3" y="5" width="18" height="16" rx="1.5"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+    "rumors": '<circle cx="12" cy="12" r="1.8"/><path d="M8.2 8.2a5.4 5.4 0 0 0 0 7.6M15.8 8.2a5.4 5.4 0 0 1 0 7.6M5.4 5.4a9.4 9.4 0 0 0 0 13.2M18.6 5.4a9.4 9.4 0 0 1 0 13.2"/>',
+}
+
+
 def page(title, body, prefix, active=""):
     links = [
         ("index.html", "Aujourd'hui", "home"),
@@ -94,8 +102,10 @@ def page(title, body, prefix, active=""):
         ("agenda.html", "Agenda", "agenda"),
         ("rumeurs.html", "Rumeurs", "rumors"),
     ]
-    nav = "".join(
-        f'<a href="{prefix}{href}"{" aria-current=page" if key == active else ""}>{label}</a>'
+    nav = '<span class="spot" aria-hidden="true"></span>' + "".join(
+        f'<a href="{prefix}{href}" title="{html.escape(label)}"{" aria-current=page" if key == active else ""}>'
+        f'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">{ICONS[key]}</svg>'
+        f'<span class="sr">{html.escape(label)}</span></a>'
         for href, label, key in links
     )
     return f"""<!doctype html>
@@ -103,15 +113,20 @@ def page(title, body, prefix, active=""):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
 <title>{html.escape(title)}</title>
 <link rel="stylesheet" href="{prefix}assets/style.css">
 <script src="{prefix}assets/app.js" defer></script>
+<script src="{prefix}assets/nav.js" defer></script>
 </head>
 <body>
 <header class="site-header">
+<div class="bar">
 <a class="brand" href="{prefix}index.html">News Agent</a>
 <nav aria-label="Navigation principale">{nav}</nav>
+</div>
 </header>
 <main>
 {body}
@@ -334,6 +349,7 @@ PROBA = re.compile(r"\((\d+(?:[.,]\d+)?)\s*%")
 END = re.compile(r"résolution\s+([\d/\-]+)")
 LEVEL = re.compile(r"niveau\s+([1-8])\s*/\s*8", re.I)
 TEXT_END = re.compile(r"\s+\(\d+(?:[.,]\d+)?\s*%|\s+—\s+|\s+·\s+")
+LEVEL_EMOJIS = {"🟡": 1, "🟢": 2, "🔵": 3, "🔴": 4, "🩷": 5, "🟣": 6, "🟪": 7, "⚫": 8}
 LEVEL_NAMES = ["Jaune", "Vert", "Bleu", "Rouge", "Rose", "Violet", "Violet foncé", "Noir"]
 
 
@@ -351,22 +367,29 @@ def parse_rumor(line):
         return None
     body = line[2:]
     proba, end, level = PROBA.search(body), END.search(body), LEVEL.search(body)
+    level_number = int(level.group(1)) if level else next(
+        (n for emoji, n in LEVEL_EMOJIS.items() if emoji in body), 0
+    )
     lowered = body.lower()
-    if "non confirmée" in lowered or "🟡" in body:
+    links = LINK.findall(body)
+    if "non confirmée" in lowered:
         confirmed = False
-    elif "recoupée" in lowered or "🟢" in body:
+    elif "recoupée" in lowered:
         confirmed = True
+    elif level_number:
+        # Sans mention explicite : recoupée si un média autre que Polymarket est cité.
+        confirmed = any("polymarket.com" not in url for _, url in links)
     else:
         confirmed = None
-    if not (proba or level or confirmed is not None):
+    if not (proba or level_number or confirmed is not None):
         return None
     return {
         "text": plain(TEXT_END.split(body)[0]),
         "proba": proba.group(1) if proba else "",
         "end": end.group(1) if end else "",
-        "level": int(level.group(1)) if level else 0,
+        "level": level_number,
         "confirmed": confirmed,
-        "links": LINK.findall(body),
+        "links": links,
     }
 
 
@@ -374,7 +397,7 @@ def rumor_row(rumor):
     level = rumor["level"]
     if level:
         name = LEVEL_NAMES[level - 1]
-        badge = f'<span class="level lvl-{level}" title="Niveau {level}/8 : {name}">{level}/8</span>'
+        badge = f'<span class="level lvl-{level}" title="Niveau {level}/8 : {name}">{level}</span>'
     else:
         badge = '<span class="level lvl-0" title="Niveau non renseigné">—</span>'
     if rumor["proba"]:
@@ -388,22 +411,11 @@ def rumor_row(rumor):
     )
     status_html = f'<span class="badge {status[0]}">{status[1]}</span>' if status[0] else "—"
     return (
-        f'<tr><td data-label="Niveau">{badge}</td>'
-        f'<td data-label="Rumeur" class="rumor-text">{html.escape(rumor["text"])}</td>'
+        f'<tr><td data-label="Rumeur" class="rumor-text"><div class="rumor-line">{badge}<span>{html.escape(rumor["text"])}</span></div></td>'
         f'<td data-label="Probabilité" class="proba">{proba}</td>'
         f'<td data-label="Résolution">{html.escape(rumor["end"] or "—")}</td>'
         f'<td data-label="Statut">{status_html}</td>'
         f'<td data-label="Sources">{sources_html(rumor["links"])}</td></tr>'
-    )
-
-
-def level_legend():
-    chips = "".join(
-        f'<li><span class="level lvl-{i}">{i}</span>{name}</li>' for i, name in enumerate(LEVEL_NAMES, 1)
-    )
-    return (
-        '<ul class="legend" aria-label="Légende des niveaux">'
-        f"<li class=\"legend-title\">Niveau (importance et probabilité)</li>{chips}</ul>"
     )
 
 
@@ -419,7 +431,7 @@ def rumor_day(date, lines):
         else:
             notes += f"<li>{html.escape(plain(line[2:] if line.startswith('- ') else line))}</li>"
     table = (
-        '<div class="table-wrap"><table class="rumors"><thead><tr><th scope="col">Niveau</th>'
+        '<div class="table-wrap"><table class="rumors"><thead><tr>'
         '<th scope="col">Rumeur</th><th scope="col">Probabilité</th><th scope="col">Résolution</th>'
         f'<th scope="col">Statut</th><th scope="col">Sources</th></tr></thead><tbody>{rows}</tbody></table></div>'
         if rows else ""
@@ -441,8 +453,8 @@ def build_rumors():
     body = (
         '<h1>Rumeurs</h1><p class="muted">Mises à jour automatiquement. '
         "Les probabilités viennent de Polymarket : ce sont des avis de marché, pas des faits. "
-        "Plus le niveau est élevé (donc la couleur foncée), plus la rumeur est importante et probable.</p>"
-        + level_legend() + blocks
+        "Le chiffre coloré devant chaque rumeur est son niveau de 1 à 8, selon l'importance et la probabilité.</p>"
+        + blocks
     )
     write("rumeurs.html", page("Rumeurs", body, "", "rumors"))
 
