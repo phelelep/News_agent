@@ -222,8 +222,8 @@ def theme_form():
     return r"""<form class="theme-form" id="theme-form" autocomplete="off">
 <label for="theme-input">Ajouter un thème à la watchlist</label>
 <div class="theme-row">
-<input id="theme-input" name="theme" type="text" required minlength="2" maxlength="40"
- pattern="[\w\-]+" placeholder="un seul mot" spellcheck="false">
+<input id="theme-input" name="theme" type="text" required minlength="2" maxlength="100"
+ placeholder="un mot ou une phrase" spellcheck="false">
 <button type="submit" class="button">Add to watchlist</button>
 </div>
 <p id="theme-status" class="muted" role="status"></p>

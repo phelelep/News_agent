@@ -94,8 +94,8 @@
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       const theme = themeInput.value.trim();
-      if (!/^[\p{L}\p{N}_-]{2,40}$/u.test(theme)) {
-        themeStatus.textContent = "Un seul mot, sans espace (lettres, chiffres, tiret).";
+      if (theme.length < 2 || theme.length > 100) {
+        themeStatus.textContent = "Le thème doit faire entre 2 et 100 caractères.";
         return;
       }
       run({

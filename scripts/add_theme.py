@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ajoute un thème (un seul mot) à la section « Thèmes suivis » de watchlist.md.
+"""Ajoute un thème (un mot ou une phrase) à la section « Thèmes suivis » de watchlist.md.
 
 --clean : affiche le thème nettoyé sans toucher au fichier.
 Code de sortie 1 si le thème est invalide.
@@ -11,14 +11,18 @@ from pathlib import Path
 
 WATCHLIST = Path(__file__).resolve().parent.parent / "watchlist.md"
 HEADING = "## Thèmes suivis"
-WORD = re.compile(r"[\w\-]{2,40}")
+MAX_LENGTH = 100
 
 
 def clean(raw):
-    word = unicodedata.normalize("NFC", raw.strip())
-    if not WORD.fullmatch(word):
-        sys.exit("Thème invalide : un seul mot (lettres, chiffres, tiret), 2 à 40 caractères.")
-    return word
+    """Un thème peut être une phrase. On retire ce qui casserait le fichier Markdown ou la lecture des cours."""
+    text = unicodedata.normalize("NFC", raw)
+    text = "".join(" " if ch.isspace() else ch for ch in text if ch.isprintable() or ch.isspace())
+    text = text.replace("(", " ").replace(")", " ")  # « (TICKER) » est lu comme une valeur cotée par cours.py
+    text = re.sub(r"\s+", " ", text).strip().lstrip("#>*+- ").strip()
+    if not (2 <= len(text) <= MAX_LENGTH):
+        sys.exit(f"Thème invalide : entre 2 et {MAX_LENGTH} caractères.")
+    return text
 
 
 def add(word):

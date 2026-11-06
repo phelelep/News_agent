@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       theme:
-        description: "Thème à ajouter (un seul mot)"
+        description: "Thème à ajouter (un mot ou une phrase)"
         required: true
         type: string
 
