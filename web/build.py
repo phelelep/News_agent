@@ -56,6 +56,16 @@ def safe_url(match):
     return match.group(0)
 
 
+def change_cell(match):
+    """Colore une variation en pourcentage ; la flèche évite de dépendre de la seule couleur."""
+    attributes, value = match.group(1), match.group(2)
+    number = float(value.replace("−", "-").replace(",", "."))
+    if number == 0:
+        return match.group(0)
+    css, arrow = ("up", "▲") if number > 0 else ("down", "▼")
+    return f'<td{attributes} class="{css}">{arrow} {value} %</td>'
+
+
 def render(source):
     converter = markdown.Markdown(extensions=["tables", "sane_lists"])
     # Le HTML brut des fichiers Markdown est affiché comme du texte, jamais interprété.
@@ -71,6 +81,7 @@ def render(source):
         f"{m.group(1)}/10</span></h3>",
         body,
     )
+    body = re.sub(r"<td([^>]*)>\s*([+\-−]\d+(?:[.,]\d+)?)\s*%\s*</td>", change_cell, body)
     return body.replace("<table>", '<div class="table-wrap"><table>').replace(
         "</table>", "</table></div>"
     )
@@ -165,12 +176,13 @@ def quotes_block(quotes):
         return '<p class="muted">Cours indisponibles pour le moment.</p>'
     rows = ""
     for q in quotes:
-        direction = "up" if q["variation"] >= 0 else "down"
+        direction = "up" if q["variation"] > 0 else "down" if q["variation"] < 0 else ""
+        arrow = {"up": "▲ ", "down": "▼ ", "": ""}[direction]
         price = f"{q['prix']:,.2f}".replace(",", " ").replace(".", ",")
         change = f"{q['variation']:+.2f}".replace(".", ",")
         rows += (
             f'<tr><th scope="row" title="{html.escape(q["nom"])}">{html.escape(q["ticker"])}</th>'
-            f'<td>{price}</td><td class="{direction}">{change} %</td></tr>'
+            f'<td>{price}</td><td class="{direction}">{arrow}{change} %</td></tr>'
         )
     latest = fr_date(max(q["date"] for q in quotes))
     return (
@@ -186,17 +198,42 @@ def rumor_button():
 <button type="button" id="rumor-button" class="button">Générer les rumeurs</button>
 <p id="rumor-status" class="muted" role="status"></p>
 <button type="button" id="rumor-forget" class="link-button" hidden>Oublier le token de cet appareil</button>
+</div>"""
+
+
+def theme_form():
+    return r"""<form class="theme-form" id="theme-form" autocomplete="off">
+<label for="theme-input">Ajouter un thème à la watchlist</label>
+<div class="theme-row">
+<input id="theme-input" name="theme" type="text" required minlength="2" maxlength="40"
+ pattern="[\w\-]+" placeholder="un seul mot" spellcheck="false">
+<button type="submit" class="button">Add to watchlist</button>
 </div>
-<dialog id="rumor-dialog" aria-labelledby="rumor-dialog-title">
+<p id="theme-status" class="muted" role="status"></p>
+</form>"""
+
+
+def token_dialog():
+    return """<dialog id="rumor-dialog" aria-labelledby="rumor-dialog-title">
 <h2 id="rumor-dialog-title">Token GitHub</h2>
-<p>Colle ton token GitHub limité à ce dépôt. Il reste dans ce navigateur et sert uniquement à lancer le workflow.</p>
+<p>Colle ton token GitHub limité à ce dépôt. Il reste dans ce navigateur et sert uniquement à lancer les workflows.</p>
 <label for="rumor-token">Token</label>
 <input id="rumor-token" type="password" autocomplete="off" spellcheck="false">
 <div class="dialog-actions">
 <button type="button" id="rumor-cancel" class="link-button">Annuler</button>
-<button type="button" id="rumor-confirm" class="button">Lancer</button>
+<button type="button" id="rumor-confirm" class="button">Valider</button>
 </div>
 </dialog>"""
+
+
+def watchlist_themes():
+    text = (ROOT / "watchlist.md").read_text(encoding="utf-8")
+    match = re.search(r"^## Thèmes suivis\s*$(.*?)(?=^## |\Z)", text, re.M | re.S)
+    if not match:
+        return ""
+    words = re.findall(r"^- (.+)$", match.group(1), re.M)
+    chips = "".join(f"<li>{html.escape(w)}</li>" for w in words)
+    return f'<ul class="themes" aria-label="Thèmes suivis">{chips}</ul>' if chips else ""
 
 
 def build_home(reports, quotes):
@@ -222,10 +259,12 @@ def build_home(reports, quotes):
 </section>
 <aside class="side">
 <section aria-labelledby="side-rumors"><h2 id="side-rumors">Rumeurs</h2>{rumor_button()}<p><a href="rumeurs.html">Voir les rumeurs</a></p></section>
+<section aria-labelledby="side-themes"><h2 id="side-themes">Thèmes</h2>{watchlist_themes()}{theme_form()}</section>
 <section aria-labelledby="side-agenda"><h2 id="side-agenda">À venir</h2><ul class="calendar">{calendar}</ul><p><a href="agenda.html">Tout l'agenda</a></p></section>
 <section aria-labelledby="side-quotes"><h2 id="side-quotes">Cours</h2>{quotes_block(quotes)}</section>
 </aside>
-</div>"""
+</div>
+{token_dialog()}"""
     write("index.html", page("News Agent", body, "", "home"))
 
 
@@ -304,7 +343,7 @@ def build_rumors():
         blocks += f'<section class="prose">{render(source)}</section>'
     if not blocks:
         blocks = '<p class="muted">Aucune rumeur générée pour le moment.</p>'
-    body = f'<h1>Rumeurs</h1><p class="muted">🟢 recoupée · 🟡 non confirmée</p>{rumor_button()}{blocks}'
+    body = f'<h1>Rumeurs</h1><p class="muted">🟢 recoupée · 🟡 non confirmée</p>{rumor_button()}{blocks}{token_dialog()}'
     write("rumeurs.html", page("Rumeurs", body, "", "rumors"))
 
 

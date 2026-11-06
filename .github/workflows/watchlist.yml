@@ -1,0 +1,41 @@
+name: Watchlist
+
+on:
+  workflow_dispatch:
+    inputs:
+      theme:
+        description: "Thème à ajouter (un seul mot)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: watchlist
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v7
+      - name: Ajouter le thème
+        env:
+          THEME: ${{ inputs.theme }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Le thème passe par l'environnement, jamais par l'interpolation du script.
+          python3 scripts/add_theme.py "$THEME"
+          if git diff --quiet; then
+            echo "Thème déjà présent, rien à faire."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Ajoute le thème à la watchlist : $(python3 scripts/add_theme.py --clean "$THEME")"
+          git push
+          # Un push fait avec GITHUB_TOKEN ne déclenche pas le workflow du site : on le lance.
+          gh workflow run pages.yml --ref main
