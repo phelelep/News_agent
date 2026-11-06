@@ -225,3 +225,29 @@ dialog input {
 .theme-form p { min-height: 1.3em; margin: .5rem 0 0; }
 .themes { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; padding: 0; margin: 0 0 .75rem; }
 .themes li { padding: .15rem .6rem; border: 1px solid currentColor; border-radius: 999px; font-size: .9rem; }
+
+.rumor-day { margin: 1.5rem 0; }
+.rumor-day h2 { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.count { font-size: .8rem; font-weight: 600; padding: .1rem .6rem; border-radius: 999px; border: 1px solid currentColor; opacity: .8; }
+.rumors { width: 100%; border-collapse: collapse; }
+.rumors th { text-align: left; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; opacity: .7; }
+.rumors th, .rumors td { padding: .6rem; vertical-align: top; border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
+.rumors tbody tr:hover { background: color-mix(in srgb, currentColor 5%, transparent); }
+.rumor-text { min-width: 16rem; font-weight: 500; }
+.proba { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.proba meter { width: 4.5rem; height: .6rem; vertical-align: middle; margin-right: .3rem; }
+.badge { display: inline-block; padding: .1rem .55rem; border-radius: 999px; font-size: .8rem; font-weight: 600; white-space: nowrap; }
+.badge.confirmed { color: var(--up); background: color-mix(in srgb, var(--up) 14%, transparent); }
+.badge.unconfirmed { background: color-mix(in srgb, #d49a00 18%, transparent); }
+.sources a { display: block; }
+.notes { list-style: none; padding: 0; margin: .5rem 0 0; opacity: .75; }
+@media (max-width: 40rem) {
+  .rumors thead { display: none; }
+  .rumors, .rumors tbody, .rumors tr, .rumors td { display: block; }
+  .rumors tr { padding: .6rem 0; border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
+  .rumors td { border: 0; padding: .15rem 0; }
+  .rumors td::before { content: attr(data-label) " : "; font-size: .75rem; opacity: .6; }
+  .rumors td.rumor-text::before { content: none; }
+  .rumor-text { min-width: 0; }
+}
+.notes li { font: inherit; font-size: .95rem; }

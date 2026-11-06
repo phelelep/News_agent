@@ -11,15 +11,18 @@ python web/build.py
 python -m http.server 8000 --directory web/_site
 ```
 
-## Bouton « Générer les rumeurs »
+## Rumeurs
 
-Le navigateur ne peut pas appeler l'API de la routine, et aucune clé ne doit se trouver dans le site.
-Le bouton lance donc le workflow `.github/workflows/rumeurs.yml`, qui appelle la routine côté GitHub.
+Le site affiche les fichiers `reports/<Mois>/rumeurs_*.md` écrits par la routine, sans bouton.
+Ligne attendue : `- <rumeur> (<proba> %, résolution <JJ/MM/AAAA>) — [Polymarket](lien) · 🟢`.
 
-Configuration, à faire une fois :
+## Bouton « Add to watchlist »
 
-1. **Clé de la routine :** dans le dépôt, Settings → Secrets and variables → Actions, créer le secret `API_KEY`.
-2. **Publication :** Settings → Pages → Source : GitHub Actions.
-3. **Token du bouton :** créer un fine-grained token limité à ce dépôt, avec la permission Actions en Read and write. Le coller au premier clic sur chaque appareil.
+Le navigateur ne peut pas écrire dans le dépôt : le bouton lance `.github/workflows/watchlist.yml`, qui ajoute le mot à `watchlist.md`.
 
-Pour changer de routine, modifier `ROUTINE_ID` dans `rumeurs.yml`.
+À faire une fois :
+
+1. **Publication :** Settings → Pages → Source : GitHub Actions.
+2. **Token du bouton :** créer un fine-grained token limité à ce dépôt, avec la permission Actions en Read and write. Le coller au premier clic sur chaque appareil.
+
+`rumeurs.yml` (déclenchement manuel de la routine) n'a plus de bouton sur le site.

@@ -1,11 +1,10 @@
-// Boutons « Générer les rumeurs » et « Add to watchlist » : lancent le workflow GitHub qui appelle la routine.
-// La clé de la routine reste dans les secrets du dépôt ; ce fichier n'en contient aucune.
+// Bouton « Add to watchlist » : lance le workflow GitHub qui met à jour watchlist.md.
+// Aucune clé dans ce fichier : seul un token GitHub saisi par l'utilisateur reste dans son navigateur.
 (function () {
   const REPO = "phelelep/News_agent";
   const STORAGE_KEY = "news-agent-github-token";
 
-  const button = document.getElementById("rumor-button");
-  const status = document.getElementById("rumor-status");
+  const status = document.getElementById("theme-status");
   const forget = document.getElementById("rumor-forget") || { hidden: true };
   if (!document.getElementById("rumor-dialog")) return;
   const dialog = document.getElementById("rumor-dialog");
@@ -86,18 +85,6 @@
       input.value = "";
       dialog.showModal();
     }
-  }
-
-  if (button) {
-    button.addEventListener("click", function () {
-      run({
-        workflow: "rumeurs.yml",
-        inputs: {},
-        button: button,
-        status: status,
-        success: "C'est lancé. Les rumeurs arriveront sur le site d'ici quelques minutes.",
-      });
-    });
   }
 
   const form = document.getElementById("theme-form");

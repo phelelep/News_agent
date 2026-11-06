@@ -193,14 +193,6 @@ def quotes_block(quotes):
     )
 
 
-def rumor_button():
-    return """<div class="rumor-action">
-<button type="button" id="rumor-button" class="button">Générer les rumeurs</button>
-<p id="rumor-status" class="muted" role="status"></p>
-<button type="button" id="rumor-forget" class="link-button" hidden>Oublier le token de cet appareil</button>
-</div>"""
-
-
 def theme_form():
     return r"""<form class="theme-form" id="theme-form" autocomplete="off">
 <label for="theme-input">Ajouter un thème à la watchlist</label>
@@ -210,6 +202,7 @@ def theme_form():
 <button type="submit" class="button">Add to watchlist</button>
 </div>
 <p id="theme-status" class="muted" role="status"></p>
+<button type="button" id="rumor-forget" class="link-button" hidden>Oublier le token de cet appareil</button>
 </form>"""
 
 
@@ -258,7 +251,7 @@ def build_home(reports, quotes):
 <p><a class="button" href="{report_url}">Lire le rapport complet</a></p>
 </section>
 <aside class="side">
-<section aria-labelledby="side-rumors"><h2 id="side-rumors">Rumeurs</h2>{rumor_button()}<p><a href="rumeurs.html">Voir les rumeurs</a></p></section>
+<section aria-labelledby="side-rumors"><h2 id="side-rumors">Rumeurs</h2><p><a href="rumeurs.html">Voir les rumeurs</a></p></section>
 <section aria-labelledby="side-themes"><h2 id="side-themes">Thèmes</h2>{watchlist_themes()}{theme_form()}</section>
 <section aria-labelledby="side-agenda"><h2 id="side-agenda">À venir</h2><ul class="calendar">{calendar}</ul><p><a href="agenda.html">Tout l'agenda</a></p></section>
 <section aria-labelledby="side-quotes"><h2 id="side-quotes">Cours</h2>{quotes_block(quotes)}</section>
@@ -336,14 +329,77 @@ def rumor_files():
     return sorted(found, key=lambda item: item[0], reverse=True)
 
 
+ROW = re.compile(
+    r"^- (?P<text>.+?)"
+    r"(?: \((?P<proba>\d+(?:[.,]\d+)?) ?%(?:, résolution (?P<end>[\d/\-]+))?\))?"
+    r"(?: — (?P<sources>.+?))?"
+    r" · (?P<level>🟢|🟡)\s*$"
+)
+LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+
+
+def sources_html(raw):
+    links = "".join(
+        f'<a rel="noopener noreferrer" href="{html.escape(url)}">{html.escape(plain(label))}</a>'
+        for label, url in LINK.findall(raw or "")
+    )
+    return f'<span class="sources">{links}</span>' if links else "—"
+
+
+def rumor_row(match):
+    level = "confirmed" if match["level"] == "🟢" else "unconfirmed"
+    label = "Recoupée" if level == "confirmed" else "Non confirmée"
+    if match["proba"]:
+        value = float(match["proba"].replace(",", "."))
+        shown = f'{match["proba"]} %'
+        proba = f'<meter min="0" max="100" value="{value}">{shown}</meter> <strong>{shown}</strong>'
+    else:
+        proba = "—"
+    return (
+        f'<tr><td data-label="Niveau"><span class="badge {level}">{match["level"]} {label}</span></td>'
+        f'<td data-label="Rumeur" class="rumor-text">{html.escape(plain(match["text"]))}</td>'
+        f'<td data-label="Probabilité" class="proba">{proba}</td>'
+        f'<td data-label="Résolution">{html.escape(match["end"] or "—")}</td>'
+        f'<td data-label="Source">{sources_html(match["sources"])}</td></tr>'
+    )
+
+
+def rumor_day(date, lines):
+    rows, notes = "", ""
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        match = ROW.match(line)
+        if match:
+            rows += rumor_row(match)
+        else:
+            notes += f"<li>{html.escape(plain(line[2:] if line.startswith('- ') else line))}</li>"
+    table = (
+        '<div class="table-wrap"><table class="rumors"><thead><tr><th scope="col">Niveau</th>'
+        '<th scope="col">Rumeur</th><th scope="col">Probabilité</th><th scope="col">Résolution</th>'
+        f'<th scope="col">Source</th></tr></thead><tbody>{rows}</tbody></table></div>'
+        if rows else ""
+    )
+    count = rows.count("<tr>")
+    badge = f'<span class="count">{count} rumeur{"s" if count > 1 else ""}</span>' if count else ""
+    extra = f'<ul class="notes">{notes}</ul>' if notes else ""
+    return f'<section class="rumor-day"><h2>{fr_date(date)} {badge}</h2>{table}{extra}</section>'
+
+
 def build_rumors():
     blocks = ""
     for _, file in rumor_files():
-        source = re.sub(r"^# .*$", "", file.read_text(encoding="utf-8"), count=1, flags=re.M)
-        blocks += f'<section class="prose">{render(source)}</section>'
+        text = file.read_text(encoding="utf-8")
+        for date, content in re.findall(r"^## (\d{4}-\d{2}-\d{2})\s*$(.*?)(?=^## |\Z)", text, re.M | re.S):
+            blocks += rumor_day(date, content.splitlines())
     if not blocks:
         blocks = '<p class="muted">Aucune rumeur générée pour le moment.</p>'
-    body = f'<h1>Rumeurs</h1><p class="muted">🟢 recoupée · 🟡 non confirmée</p>{rumor_button()}{blocks}{token_dialog()}'
+    body = (
+        '<h1>Rumeurs</h1><p class="muted">Mises à jour automatiquement. '
+        "Les probabilités viennent de Polymarket : ce sont des avis de marché, pas des faits. "
+        "🟢 recoupée par la presse · 🟡 non confirmée.</p>" + blocks
+    )
     write("rumeurs.html", page("Rumeurs", body, "", "rumors"))
 
 
