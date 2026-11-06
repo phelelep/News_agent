@@ -9,6 +9,7 @@ Rapports de veille financière/tech générés automatiquement sur la watchlist 
 6. Crypto (ETH, BTC, stablecoins & euro numérique)
 7. Guerres (Ukraine - Russie, Guerre du moyen orient)
 8. Le marché du travail (licenciements, évolution de l'IA, faillites, perspectives futuristes, métiers qui disparaîtront et citations de dirigeants concernant les grands visionnaires)
+9. Solaire et stockage (First Solar, Enphase, Tesla Energy)
 
 Site : https://phelelep.github.io/News_agent/
 
