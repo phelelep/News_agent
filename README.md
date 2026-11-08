@@ -17,6 +17,7 @@ Site : https://phelelep.github.io/News_agent/
 
 - [Agenda](reports/Novembre/Agenda.md)
 - [2026-11-07](reports/Novembre/2026-11-07.md)
+- [Rumeurs 2026-11-08](reports/Novembre/rumeurs_20261108.md)
 - [Rumeurs 2026-11-07](reports/Novembre/rumeurs_20261107.md)
 - [Rumeurs 2026-11-06](reports/Novembre/rumeurs_20261106.md)
 - [2026-11-06](reports/Novembre/2026-11-06.md)
