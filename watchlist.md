@@ -61,3 +61,17 @@ Suivi élargi (nucléaire avancé, fusion, stockage) :
 - Stablecoins
 - Euro numérique
 
+## Guerres 
+- Ukraine - Russie
+- Guerre au Moyen-Orient
+
+## Le marché du travail 
+- Licenciements de masse
+- Evolution de l'IA (nouveau modeles IA)
+- Perspectives futuristes (Métiers qui disparaîtront et qui emergent)
+- Citations de dirigeants concernant les grands visionnaires 
+
+## Solaire et stockage 
+- First Solar
+- Enphase
+- Tesla Energy
