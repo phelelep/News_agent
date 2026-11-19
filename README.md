@@ -12,26 +12,3 @@ Rapports de veille financière/tech générés automatiquement sur la watchlist 
 9. Solaire et stockage (First Solar, Enphase, Tesla Energy)
 
 Site : https://phelelep.github.io/News_agent/
-
-### Rapports Novembre 2026
-
-- [Agenda](reports/Novembre/Agenda.md)
-- [Rumeurs 2026-11-13](reports/Novembre/rumeurs_20261113.md)
-- [Rumeurs 2026-11-12](reports/Novembre/rumeurs_20261112.md)
-- [2026-11-12](reports/Novembre/2026-11-12.md)
-- [Rumeurs 2026-11-11](reports/Novembre/rumeurs_20261111.md)
-- [2026-11-11](reports/Novembre/2026-11-11.md)
-- [Rumeurs 2026-11-10](reports/Novembre/rumeurs_20261110.md)
-- [2026-11-10](reports/Novembre/2026-11-10.md)
-- [Rumeurs 2026-11-09](reports/Novembre/rumeurs_20261109.md)
-- [2026-11-09](reports/Novembre/2026-11-09.md)
-- [2026-11-08](reports/Novembre/2026-11-08.md)
-- [Rumeurs 2026-11-08](reports/Novembre/rumeurs_20261108.md)
-- [2026-11-07](reports/Novembre/2026-11-07.md)
-- [Rumeurs 2026-11-07](reports/Novembre/rumeurs_20261107.md)
-- [Rumeurs 2026-11-06](reports/Novembre/rumeurs_20261106.md)
-- [2026-11-06](reports/Novembre/2026-11-06.md)
-- [Rumeurs 2026-11-05](reports/Novembre/rumeurs_20261105.md)
-- [2026-11-05](reports/Novembre/2026-11-05.md)
-- [2026-11-04](reports/Novembre/2026-11-04.md)
-- [2026-11-02](reports/Novembre/2026-11-02.md)
